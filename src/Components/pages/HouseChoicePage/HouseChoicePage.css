@@ -1,0 +1,31 @@
+.house-choice-section {
+  margin: 80px auto 150px auto;
+  max-width: 1200px;
+  width: calc(100% - 120px);
+}
+@media (max-width: 992px) {
+  .house-choice-section {
+    width: calc(100% - 60px);
+  }
+}
+
+.mobile-house-choice-section {
+  width: calc(100% - 120px);
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+}
+@media (max-width: 992px) {
+  .mobile-house-choice-section {
+    width: calc(100% - 60px);
+  }
+}
+@media (max-width: 769px) {
+  .mobile-house-choice-section {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 319px) {
+  .mobile-house-choice-section {
+    width: calc(100% - 30px);
+  }
+}/*# sourceMappingURL=HouseChoicePage.css.map */

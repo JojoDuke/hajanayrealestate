@@ -1,0 +1,87 @@
+﻿{
+    "pages":  [
+                  {
+                      "id":  1,
+                      "name":  "ÃvodnÃ­ strÃ¡nka",
+                      "sections":  [
+                                       {
+                                           "id":  1,
+                                           "page":  1,
+                                           "title":  "O projektu",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"Jsme rodinnÃ¡ developerskÃ¡ firma. TentokrÃ¡t vÃ¡m pÅinÃ¡Å¡Ã­me rodinnÃ© domy vÂ jednÃ© zÂ nejÅ¾Ã¡danÄjÅ¡Ã­ch lokalit v tÄsnÃ© blÃ­zkosti Brna. MÅ¯Å¾ete tak Äerpat vÃ½hody mÄsta a zÃ¡roveÅ si uÅ¾Ã­vat rodinnÃ½ Å¾ivot se zahradou. VÂ nabÃ­dce je nÄkolik novostaveb, kterÃ© jsou navÅeny architektem pÅÃ­mo pro vÃ¡s.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":32,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "VÃ­ce o projektu",
+                                           "images":  [
+                                                          "/media/kam02.jpg"
+                                                      ]
+                                       },
+                                       {
+                                           "id":  2,
+                                           "page":  1,
+                                           "title":  "Lokalita",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"Obec Hajany vÃ¡m nabÃ­zÃ­ dokonalou rovnovÃ¡hu mezi pÅÃ­rodou a pohodlÃ­m modernÃ­ho bydlenÃ­. NachÃ¡zÃ­ se pouhÃ½ch 15 minut od Brna a okouzlÃ­ vÃ¡s klidnÃ½m prostÅedÃ­m, malebnou pÅÃ­rodou a Å¡irokÃ½mi moÅ¾nostmi relaxace i sportovnÃ­ho vyÅ¾itÃ­. DÃ­ky skvÄlÃ© dopravnÃ­ dostupnosti se snadno dostanete nejen do Brna, ale i na dÃ¡lnici D1.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":23,\"length\":62,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "VÃ­ce o lokalitÄ",
+                                           "images":  [
+                                                          "/media/Hajany_mapa.png"
+                                                      ]
+                                       },
+                                       {
+                                           "id":  3,
+                                           "page":  1,
+                                           "title":  "NabÃ­dka domÅ¯",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"RodinnÃ½ dÅ¯m pÅesnÄ podle vaÅ¡ich pÅedstav. KaÅ¾dÃ½ dÅ¯m je navrÅ¾en architektem tak, aby vÃ¡m poskytoval co nejlepÅ¡Ã­ bydlenÃ­.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":42,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "NabÃ­dka",
+                                           "images":  [
+                                                          "/media/kam04.jpg"
+                                                      ]
+                                       },
+                                       {
+                                           "id":  4,
+                                           "page":  1,
+                                           "title":  "Aktuality",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"BuÄte vÂ obraze.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9prr4\",\"text\":\"PÅinÃ¡Å¡Ã­me vÃ¡m novinky ze stavby a zÂ celÃ©ho procesu stavÄnÃ­. BuÄte u toho sÂ nÃ¡mi od samotnÃ©ho zaÄÃ¡tku.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "VÃ­ce o aktualitÃ¡ch",
+                                           "images":  [
+                                                          "/media/Snimek_obrazovky_2025-02-21_v19.17.08.png"
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "id":  2,
+                      "name":  "O projektu",
+                      "sections":  [
+                                       {
+                                           "id":  5,
+                                           "page":  2,
+                                           "title":  "O projektu",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"PatrovÃ© domy 5+kk s dvojgarÃ¡Å¾Ã­, velkou terasou a chytrÃ½mi technologiemi.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"11ra7\",\"text\":\"KaÅ¾dÃ½ dÅ¯m mÃ¡ obytnou plochu 200 mÂ², pozemky 465-524 mÂ² a je vybaven nejmodernÄjÅ¡Ã­mi technologiemi pro komfortnÃ­ a ÃºspornÃ© bydlenÃ­.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bkrg\",\"text\":\"CelÃ½ projekt je koncipovÃ¡n jako modernÃ­ a ÃºspornÃ© bydlenÃ­, kterÃ© kombinuje Å¡piÄkovÃ© technologie s komfortem a soukromÃ­m.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2bahu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ppsc\",\"text\":\"Technologie a vybavenÃ­\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":22,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"40nuc\",\"text\":\"â¢    ChytrÃ¡ domÃ¡cnost Loxone â automatizace vytÃ¡pÄnÃ­, osvÄtlenÃ­, zabezpeÄenÃ­ a dalÅ¡Ã­ch funkcÃ­\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2uknq\",\"text\":\"â¢    FotovoltaickÃ¡ elektrÃ¡rna s bateriovÃ½m ÃºloÅ¾iÅ¡tÄm â ekologickÃ½ a ÃºspornÃ½ provoz\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7upq0\",\"text\":\"â¢    ÃspornÃ© elektrickÃ© podlahovÃ© vytÃ¡pÄnÃ­ â inteligentnÃ­ regulace s propojenÃ­m na FVE\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8g7dd\",\"text\":\"â¢    HlinÃ­kovÃ¡ okna s trojsklem a elektrickÃ½mi Å¾aluziemi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"at98u\",\"text\":\"â¢    LuxusnÃ­ oplocenÃ­ Luxline â z pÅednÃ­ a boÄnÃ­ strany (zadnÃ­ ÄÃ¡st lze ÅeÅ¡it individuÃ¡lnÄ: Luxline plot s brankou nebo pletivo)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"am779\",\"text\":\"â¢    UmÄlÃ½ val za domy osÃ¡zenÃ½ zelenÃ­ â zajiÅ¡Å¥uje soukromÃ­, eliminuje hluk z komunikace HajanyâOÅechov a vytvÃ¡ÅÃ­ vÃ½hled do zelenÄ\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nfhu\",\"text\":\"â¢    MoÅ¾nost vstupu brankou ze zahrady pÅÃ­mo do pÅÃ­rody\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"61fin\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cl1u1\",\"text\":\"Realizaci zajiÅ¡Å¥uje Real Major s.r.o., naÅ¡e firma se sÃ­dlem pÅÃ­mo v Hajanech, s dlouholetÃ½mi zkuÅ¡enostmi v oblasti vÃ½stavby modernÃ­ch rodinnÃ½ch domÅ¯.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "Zjistit vÃ­ce",
+                                           "images":  [
+                                                          "/media/pageHeroBg.jpg",
+                                                          "/media/kam01.jpg",
+                                                          "/media/kam02.jpg",
+                                                          "/media/kam03.jpg",
+                                                          "/media/kam04.jpg",
+                                                          "/media/kam05.jpg"
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "id":  3,
+                      "name":  "Lokalita",
+                      "sections":  [
+                                       {
+                                           "id":  6,
+                                           "page":  3,
+                                           "title":  "Lokalita",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"Hajany jsou bezpeÄnou a pÅÃ­jemnou obcÃ­, kde jsme jiÅ¾ dÅÃ­ve postavili a ÃºspÄÅ¡nÄ prodali 50 rodinnÃ½ch domÅ¯. DÃ­ky tomu zde vyrostla silnÃ¡ komunita mladÃ½ch rodin, kterÃ© si uÅ¾Ã­vajÃ­ klidnÃ© prostÅedÃ­, pÅÃ¡telskÃ© sousedskÃ© vztahy a komfort modernÃ­ho bydlenÃ­.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":129,\"length\":28,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"93fu8\",\"text\":\"PÅedstavte si mÃ­sto, kde se spojuje pohodlÃ­ modernÃ­ho domova s kouzlem jihomoravskÃ© pÅÃ­rody. Hajany, malebnÃ¡ obec v okrese Brno-venkov, nabÃ­zejÃ­ ideÃ¡lnÃ­ kombinaci klidu, soukromÃ­ a skvÄlÃ© dostupnosti do Brna.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":36,\"length\":55,\"style\":\"BOLD\"},{\"offset\":163,\"length\":44,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ccosu\",\"text\":\"VÅ¡e, co potÅebujete pro pohodlnÃ½ Å¾ivot, najdete pÅÃ­mo v obci â soukromou mateÅskou Å¡kolku, obecnÃ­ ÃºÅad, sportovnÃ­ i dÄtskÃ¡ hÅiÅ¡tÄ, restauraci, sokolovnu a obchod. Hajany jsou mÃ­stem, kde si mÅ¯Å¾ete uÅ¾Ã­vat soukromÃ­ a pohodu venkovskÃ©ho Å¾ivota, aniÅ¾ byste se museli vzdÃ¡t vÃ½hod mÄsta.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":163,\"length\":118,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "Zjistit vÃ­ce o lokalitÄ",
+                                           "images":  [
+
+                                                      ]
+                                       }
+                                   ]
+                  }
+              ]
+}

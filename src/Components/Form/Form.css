@@ -1,0 +1,189 @@
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  border: 5px solid #F5CE42;
+  padding: 60px;
+}
+@media (max-width: 769px) {
+  form {
+    padding: 30px;
+  }
+}
+@media (max-width: 769px) {
+  form {
+    padding: 20px;
+  }
+}
+form .non-selectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+form .form-title {
+  margin: 0 0 40px 0;
+}
+form .input-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+form .input-container .error-msg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1em;
+  background-color: #F5CE42;
+  color: black;
+  padding: 0.3em;
+}
+@media (max-width: 576px) {
+  form .input-container .error-msg {
+    font-size: 0.7em;
+  }
+}
+form .input-container label {
+  position: relative;
+  font-size: 120%;
+  cursor: text;
+  opacity: 1;
+  transition: all 0.2s;
+}
+@media (max-width: 576px) {
+  form .input-container label {
+    font-size: 90%;
+  }
+}
+form .input-container .input-text {
+  font-family: "SpaceGrotesk-Medium", sans-serif;
+  font-size: 180%;
+  width: 100% !important;
+  max-width: 100%;
+  border: 2px solid #F5CE42;
+  border-radius: 0px;
+  padding: 0;
+  padding: 8px;
+}
+@media (max-width: 576px) {
+  form .input-container .input-text {
+    font-size: 120%;
+  }
+}
+form .input-container #mssg {
+  font-size: 160%;
+  min-height: 200px;
+  max-height: 600px;
+}
+@media (max-width: 576px) {
+  form .input-container #mssg {
+    font-size: 120%;
+  }
+}
+form .input-container .input-text:focus {
+  outline: none;
+}
+form .check-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 30px;
+}
+@media (max-width: 576px) {
+  form .check-button-container {
+    flex-direction: column;
+  }
+}
+form .check-button-container .clickable:hover {
+  cursor: pointer;
+}
+form .check-button-container span {
+  position: absolute;
+  bottom: 0;
+  left: 2.9em;
+  font-size: 0.7em;
+  background-color: transparent;
+  color: black;
+  padding: 0.3em;
+}
+form .check-button-container .checkbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  font-size: 100%;
+}
+@media (max-width: 576px) {
+  form .check-button-container .checkbox-container {
+    width: 100%;
+    font-size: 80%;
+  }
+}
+form .check-button-container .checkbox-container #check-error {
+  font-size: 0.8em;
+  top: -2.5em;
+  left: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #F5CE42;
+}
+@media screen and (max-width: 320px) {
+  form .check-button-container .checkbox-container #check-error {
+    top: -3.5em;
+  }
+}
+form .check-button-container .checkbox-container input[type=checkbox] {
+  -webkit-appearance: none;
+  background: white;
+  border: 2px solid #F5CE42;
+  border-radius: 0px;
+  position: relative;
+  min-width: 25px;
+  height: 25px;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  form .check-button-container .checkbox-container input[type=checkbox] {
+    min-width: 20px;
+    height: 20px;
+  }
+}
+form .check-button-container .checkbox-container input:checked {
+  background: #F5CE42;
+  border: none;
+}
+form .check-button-container .checkbox-container input:checked:after {
+  content: "";
+  position: absolute;
+  top: 0.05em;
+  left: 0.37em;
+  background-color: #F5CE42;
+}
+form .check-button-container .checkbox-container label {
+  font-size: 1em;
+  margin-left: 1.5em;
+}
+form .check-button-container .yellow-button {
+  padding: 0.5em 1.7em 0.45em 1.7em;
+  font-family: inherit;
+  font-size: 1.2em;
+  border: none;
+  margin-left: 1.5em;
+}
+@media (max-width: 576px) {
+  form .check-button-container .yellow-button {
+    margin: 20px 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}/*# sourceMappingURL=Form.css.map */

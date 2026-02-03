@@ -1,0 +1,21 @@
+@import '../../../../stylesheet/styles/colors';
+@import '../../../../stylesheet/styles/breakpoints';
+
+.form-section {
+    width: calc(100% - 120px);
+    max-width: 1200px;
+    margin: 150px auto;
+    
+    @include md {
+        margin: 100px auto;
+        width: calc(100% - 60px);
+    }
+    @include xs {
+        margin: 50px 0 0 0;
+        width: 100%;
+    }
+}
+
+.form-wrapper {
+    width: 100%;
+}

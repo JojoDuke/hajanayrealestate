@@ -1,0 +1,155 @@
+.image-map {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  background-size: cover;
+  background-image: url("../../../assets/img/Components/InteractiveHouses/interactive_houses_background.jpg");
+  box-sizing: border-box;
+}
+.image-map .image-map-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.image-map .image-map1,
+.image-map .image-map2,
+.image-map .image-map3,
+.image-map .image-map4,
+.image-map .image-map5,
+.image-map .image-map6,
+.image-map .image-map7,
+.image-map .image-map8,
+.image-map .image-map9,
+.image-map .image-map10,
+.image-map .image-map11 {
+  transition-delay: 0.07s;
+}
+.image-map .image-map1:hover, .image-map .image-map1:focus, .image-map .image-map1:active,
+.image-map .image-map2:hover,
+.image-map .image-map2:focus,
+.image-map .image-map2:active,
+.image-map .image-map3:hover,
+.image-map .image-map3:focus,
+.image-map .image-map3:active,
+.image-map .image-map4:hover,
+.image-map .image-map4:focus,
+.image-map .image-map4:active,
+.image-map .image-map5:hover,
+.image-map .image-map5:focus,
+.image-map .image-map5:active,
+.image-map .image-map6:hover,
+.image-map .image-map6:focus,
+.image-map .image-map6:active,
+.image-map .image-map7:hover,
+.image-map .image-map7:focus,
+.image-map .image-map7:active,
+.image-map .image-map8:hover,
+.image-map .image-map8:focus,
+.image-map .image-map8:active,
+.image-map .image-map9:hover,
+.image-map .image-map9:focus,
+.image-map .image-map9:active,
+.image-map .image-map10:hover,
+.image-map .image-map10:focus,
+.image-map .image-map10:active,
+.image-map .image-map11:hover,
+.image-map .image-map11:focus,
+.image-map .image-map11:active {
+  opacity: 0.7;
+  transition-delay: 0.04s;
+  cursor: pointer;
+}
+.image-map .image-map1:hover:nth-child(2), .image-map .image-map1:focus:nth-child(2), .image-map .image-map1:active:nth-child(2),
+.image-map .image-map2:hover:nth-child(2),
+.image-map .image-map2:focus:nth-child(2),
+.image-map .image-map2:active:nth-child(2),
+.image-map .image-map3:hover:nth-child(2),
+.image-map .image-map3:focus:nth-child(2),
+.image-map .image-map3:active:nth-child(2),
+.image-map .image-map4:hover:nth-child(2),
+.image-map .image-map4:focus:nth-child(2),
+.image-map .image-map4:active:nth-child(2),
+.image-map .image-map5:hover:nth-child(2),
+.image-map .image-map5:focus:nth-child(2),
+.image-map .image-map5:active:nth-child(2),
+.image-map .image-map6:hover:nth-child(2),
+.image-map .image-map6:focus:nth-child(2),
+.image-map .image-map6:active:nth-child(2),
+.image-map .image-map7:hover:nth-child(2),
+.image-map .image-map7:focus:nth-child(2),
+.image-map .image-map7:active:nth-child(2),
+.image-map .image-map8:hover:nth-child(2),
+.image-map .image-map8:focus:nth-child(2),
+.image-map .image-map8:active:nth-child(2),
+.image-map .image-map9:hover:nth-child(2),
+.image-map .image-map9:focus:nth-child(2),
+.image-map .image-map9:active:nth-child(2),
+.image-map .image-map10:hover:nth-child(2),
+.image-map .image-map10:focus:nth-child(2),
+.image-map .image-map10:active:nth-child(2),
+.image-map .image-map11:hover:nth-child(2),
+.image-map .image-map11:focus:nth-child(2),
+.image-map .image-map11:active:nth-child(2) {
+  opacity: 1 !important;
+}
+.image-map .image-map1-stroke,
+.image-map .image-map2-stroke,
+.image-map .image-map3-stroke,
+.image-map .image-map4-stroke,
+.image-map .image-map5-stroke,
+.image-map .image-map6-stroke,
+.image-map .image-map7-stroke,
+.image-map .image-map8-stroke,
+.image-map .image-map9-stroke,
+.image-map .image-map10-stroke,
+.image-map .image-map11-stroke {
+  transition-delay: 0.07s;
+}
+.image-map .image-map1-stroke:hover, .image-map .image-map1-stroke:focus, .image-map .image-map1-stroke:active,
+.image-map .image-map2-stroke:hover,
+.image-map .image-map2-stroke:focus,
+.image-map .image-map2-stroke:active,
+.image-map .image-map3-stroke:hover,
+.image-map .image-map3-stroke:focus,
+.image-map .image-map3-stroke:active,
+.image-map .image-map4-stroke:hover,
+.image-map .image-map4-stroke:focus,
+.image-map .image-map4-stroke:active,
+.image-map .image-map5-stroke:hover,
+.image-map .image-map5-stroke:focus,
+.image-map .image-map5-stroke:active,
+.image-map .image-map6-stroke:hover,
+.image-map .image-map6-stroke:focus,
+.image-map .image-map6-stroke:active,
+.image-map .image-map7-stroke:hover,
+.image-map .image-map7-stroke:focus,
+.image-map .image-map7-stroke:active,
+.image-map .image-map8-stroke:hover,
+.image-map .image-map8-stroke:focus,
+.image-map .image-map8-stroke:active,
+.image-map .image-map9-stroke:hover,
+.image-map .image-map9-stroke:focus,
+.image-map .image-map9-stroke:active,
+.image-map .image-map10-stroke:hover,
+.image-map .image-map10-stroke:focus,
+.image-map .image-map10-stroke:active,
+.image-map .image-map11-stroke:hover,
+.image-map .image-map11-stroke:focus,
+.image-map .image-map11-stroke:active {
+  opacity: 1;
+  transition-delay: 0.04s;
+  cursor: pointer;
+}
+.image-map .sold:hover, .image-map .sold:focus, .image-map .sold:active {
+  cursor: initial;
+}
+
+/**
+ * If HouseChoice component is called from landing page the background image should be original (bigger/higher)
+ *
+.home-image-map {
+    background-image: url('../../assets/images/new-image-map.jpg');
+}*//*# sourceMappingURL=ImageMap.css.map */

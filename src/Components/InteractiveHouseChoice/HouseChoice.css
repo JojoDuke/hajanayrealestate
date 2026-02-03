@@ -1,0 +1,21 @@
+.house-choice {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0 20px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .house-choice {
+    padding: 20px 0;
+  }
+}
+.house-choice .header {
+  margin: 12px 0 20px 0;
+  text-align: center;
+}
+@media (max-width: 769px) {
+  .house-choice .header span {
+    display: block;
+  }
+}/*# sourceMappingURL=HouseChoice.css.map */

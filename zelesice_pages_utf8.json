@@ -1,0 +1,93 @@
+﻿{
+    "pages":  [
+                  {
+                      "id":  1,
+                      "name":  "ÃvodnÃ­ strÃ¡nka",
+                      "sections":  [
+                                       {
+                                           "id":  4,
+                                           "page":  1,
+                                           "title":  "Aktuality",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"BuÄte vÂ obraze.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1aa70\",\"text\":\"PÅinÃ¡Å¡Ã­me vÃ¡m novinky ze stavby a zÂ celÃ©ho procesu stavÄnÃ­. BuÄte u toho sÂ nÃ¡mi od samotnÃ©ho zaÄÃ¡tku.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "Aktuality",
+                                           "images":  [
+                                                          "/media/EXT_2-5.effectsResult.jpg"
+                                                      ]
+                                       },
+                                       {
+                                           "id":  1,
+                                           "page":  1,
+                                           "title":  "O projektu",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"Jsme rodinnÃ¡ developerskÃ¡ firma. TentokrÃ¡t vÃ¡m pÅinÃ¡Å¡Ã­me rodinnÃ© domy vÂ jednÃ© zÂ nejÅ¾Ã¡danÄjÅ¡Ã­ch lokalit v tÄsnÃ© blÃ­zkosti Brna. MÅ¯Å¾ete tak Äerpat vÃ½hody mÄsta a zÃ¡roveÅ si uÅ¾Ã­vat rodinnÃ½ Å¾ivot se zahradou. VÂ nabÃ­dce je nÄkolik novostaveb, kterÃ© jsou navÅeny architektem pÅÃ­mo pro vÃ¡s.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":32,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "VÃ­ce o projektu",
+                                           "images":  [
+                                                          "/media/imgFeature1.jpg"
+                                                      ]
+                                       },
+                                       {
+                                           "id":  3,
+                                           "page":  1,
+                                           "title":  "NabÃ­dka domÅ¯",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"RodinnÃ½ dÅ¯m pÅesnÄ podle vaÅ¡ich pÅedstav. KaÅ¾dÃ½ dÅ¯m je navrÅ¾en architektem tak, aby vÃ¡m poskytoval co nejlepÅ¡Ã­ bydlenÃ­.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":42,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "NabÃ­dka",
+                                           "images":  [
+                                                          "/media/zapad_EXT_3_region.effectsResult_1.jpg"
+                                                      ]
+                                       },
+                                       {
+                                           "id":  2,
+                                           "page":  1,
+                                           "title":  "Lokalita",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"VÃ½hody mÄsta s vlastnÃ­ zahradou. To pÅesnÄ nabÃ­zÃ­ obec Å½eleÅ¡ice, kterou si okamÅ¾itÄ zamilujete. NachÃ¡zÃ­ se pouhÃ½ch 15 minut od Brna a svÃ½m obyvatelÅ¯m poskytuje malebnou pÅÃ­rodu sÂ relaxaÄnÃ­m a sportovnÃ­m vyÅ¾itÃ­m. SkvÄlÃ¡ dostupnost na D1. V obci se nachÃ¡zÃ­ zÃ¡kladnÃ­ Å¡kola, mateÅskÃ¡ Å¡kola, obecnÃ­ ÃºÅad, poÅ¡ta, fotbalovÃ© hÅiÅ¡tÄ, dÄtskÃ© hÅiÅ¡tÄ, restaurace, obchod, cukrÃ¡rna.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":32,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "VÃ­ce o lokalitÄ",
+                                           "images":  [
+                                                          "/media/imgFeature2.jpg"
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "id":  2,
+                      "name":  "O projektu",
+                      "sections":  [
+                                       {
+                                           "id":  5,
+                                           "page":  2,
+                                           "title":  "O projektu",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"Jsme rodinnÃ¡ developerskÃ¡, stavebnÃ­ a realitnÃ­ firma, kterÃ¡ je na trhu jiÅ¾ skoro 20 let. NaÅ¡i prÃ¡ci zaklÃ¡dÃ¡me pÅedevÅ¡Ã­m na mnohaletÃ½ch zkuÅ¡enostech a individuÃ¡lnÃ­mu pÅÃ­stupu ke kaÅ¾dÃ©mu naÅ¡emu klientovi. Spokojenost naÅ¡ich zÃ¡kaznÃ­kÅ¯ je pro nÃ¡s prioritou, proto mÅ¯Å¾ete oÄekÃ¡vat profesionÃ¡lnÃ­ jednÃ¡nÃ­ a osobnÃ­ pÅÃ­stup. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"iln6\",\"text\":\"\\nZabÃ½vame se vÃ½stavbou modernÃ­ch rodinnÃ½ch inteligentnÃ­ch domÅ¯ v blÃ­zkÃ©m okolÃ­ Brna. \\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"67qg8\",\"text\":\"Po ÃºspÄÅ¡nÃ©m projektu ModernÃ­ Hajany pÅichÃ¡zÃ­me s novou nabÃ­dkou rodinnÃ©ho bydlenÃ­. JednÃ¡ se o jednu z nejÅ¾Ã¡danÄjÅ¡Ã­ch lokalit. ÅeÄ je o obci Å½eleÅ¡ice, kterÃ¡ se chlubÃ­ nejen svou obÄanskou vybavenostÃ­, ale pÅedevÅ¡Ã­m vzdÃ¡lenostÃ­ od Brna. PÅÃ­mo v centru mÄsta jste autem do patnÃ¡cti minut. MÅ¯Å¾ete tedy Äerpat vÃ½hody mÄsta, ale s vlastnÃ­ zahradou.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"80oob\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bf8k4\",\"text\":\"RodinnÃ© domy v Å½eleÅ¡icÃ­ch jsou navrÅ¾eny architektem tak, aby bylo dosaÅ¾eno spokojenosti kaÅ¾dÃ©ho klienta. TÄÅ¡Ã­me se na spoluprÃ¡ci, na jejÃ­mÅ¾ konci ÄekÃ¡ dÅ¯m zcela podle pÅedstav klienta.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a35fm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3egb0\",\"text\":\"NaÅ¡e projekty vytvÃ¡ÅÃ­me spoleÄnÄ s partnerskou stavebnÃ­ spoleÄnostÃ­ Stavby KroÄa. Realizaci naÅ¡ich spoleÄnÃ½ch poslednÃ­ch projektÅ¯ mÅ¯Å¾ete vidÄt na jihu Brna v obci Hajany a Å½eleÅ¡ice, kde jsme postavili vÃ­ce neÅ¾ 50 domÅ¯ a ve vÃ½stavbÄ dalÅ¡Ã­ch pokraÄujeme. V souÄasnosti takÃ© spoleÄnÄ pÅipravujeme vÃ½stavbu 25 bungalovÅ¯ na krasnÃ©m mÃ­stÄ naÅ¡Ã­ jiÅ¾nÃ­ Moravy pod PÃ¡lavou.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cuddr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"52klv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "Zjistit vÃ­ce",
+                                           "images":  [
+                                                          "/media/1_01.jpg",
+                                                          "/media/10_01.jpg",
+                                                          "/media/3_01.jpg",
+                                                          "/media/5_02.jpg",
+                                                          "/media/7_01.jpg",
+                                                          "/media/8_01.jpg",
+                                                          "/media/1_02.jpg",
+                                                          "/media/9_01.jpg",
+                                                          "/media/2_01.jpg",
+                                                          "/media/Cam1.jpg",
+                                                          "/media/Cam3.jpg",
+                                                          "/media/5_01.jpg"
+                                                      ]
+                                       }
+                                   ]
+                  },
+                  {
+                      "id":  3,
+                      "name":  "Lokalita",
+                      "sections":  [
+                                       {
+                                           "id":  6,
+                                           "page":  3,
+                                           "title":  "Lokalita",
+                                           "content":  "{\"blocks\":[{\"key\":\"efam8\",\"text\":\"Å½eleÅ¡ice jsou obcÃ­ rozklÃ¡dajÃ­cÃ­ se v blÃ­zkosti mÄsta ModÅice v okrese Brno-venkov. JednÃ¡ se o obec, kterÃ¡ svÃ½m obÄanÅ¯m poskytuje klidnÃ© bydlenÃ­ obklopenÃ© malebnou pÅÃ­rodou, kde mÅ¯Å¾ete trÃ¡vit volnÃ½ Äas s rodinou. V obci Å¾ije pÅibliÅ¾nÄ 1600 obyvatel. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3bnhq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e6ng5\",\"text\":\"Jednou z nejvÄtÅ¡Ã­ch vÃ½hod obce je jejÃ­ dostupnost do Brna. Jen 8 minut od obce se nachÃ¡zÃ­ obchodnÃ­ a zÃ¡bavnÃ­ centrum OC Olympia. V samotnÃ©m centru Brna jste autem za 15 minut. Pro dÄti je obec vybavena dvÄma mateÅskÃ½mi a dvÄma zÃ¡kladnÃ­mi Å¡kolami, dÃ¡le se zde nachÃ¡zÃ­ obecnÃ­ ÃºÅad, poÅ¡ta, fotbalovÃ© hÅiÅ¡tÄ, dÄtskÃ© hÅiÅ¡tÄ, restaurace, cukrÃ¡rna, kostel. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2b2c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ccea1\",\"text\":\"O zÃ¡bavu a sportovnÃ­ vyÅ¾itÃ­ je v Å½eleÅ¡icÃ­ch postarÃ¡no. NachÃ¡zÃ­ se zde KynologickÃ½ klub, MysliveckÃ½ spolek a v neposlednÃ­ ÅadÄ VinaÅskÃ½ spolek. MilovnÃ­ky kol a pÄÅ¡Ã­ch tÃºr potÄÅ¡Ã­ cyklotrasy, kterÃ© se v okolÃ­ nachÃ¡zÃ­. ZavÃ­tat mÅ¯Å¾ete napÅÃ­klad do pÅÃ­rodnÃ­ho parku Bobrava, vydat se po BrnÄnskÃ© vinaÅskÃ© stezce nebo provÄtrat kolo na cyklostezce s nÃ¡zvem Å½eleÅ¡ickÃ© KOLORÃDO.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+                                           "button":  "Zjistit vÃ­ce o lokalitÄ",
+                                           "images":  [
+
+                                                      ]
+                                       }
+                                   ]
+                  }
+              ]
+}

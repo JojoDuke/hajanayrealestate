@@ -1,0 +1,167 @@
+@import '../../../stylesheet/styles/colors';
+@import '../../../stylesheet/styles/breakpoints';
+
+.locality-page-container {
+    width: calc(100% - 120px);
+    max-width: 1200px;
+    margin: 100px auto;
+    @include md {
+        width: calc(100% - 60px);
+        margin: 50px auto 100px auto;
+    }
+    @include sm {
+        margin: 50px auto 0 auto;
+    }
+    @include xxs {
+        width: calc(100% - 30px);
+    }
+}
+
+.locality-description-wrapper {
+    padding: 5px 0 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    @include sm {
+        border: none;
+        padding: 0 0 50px 0;
+    }
+
+    .map-image-container {
+        flex: 0 0 calc(300px + 10vw);
+        margin-left: calc(10px + 5vw);
+        max-width: 450px;
+        height: auto;
+        
+        img {
+            height:100%;
+            width:100%;
+            object-fit: cover;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        max-width: 70ch;
+        flex: 0 0 1fr;
+        margin: 0;
+    }
+}
+
+.locality-features-wrapper {
+    width: 100%;
+    padding: 40px;
+    padding-left: 20px;
+    border: 3px solid $yellow;
+    border-left: none;
+    position: relative;
+
+    @include sm {
+        border-right: none;
+        border-bottom: none;
+        padding: 20px 0;
+    }
+
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 100px;
+        width: 1px;
+        position: absolute;
+        top: -100px;
+        left: 0px;
+        border-left: 3px solid $yellow;
+        
+        @include sm {
+            display: none;
+        }
+    }
+
+    h2 {
+        text-align: left;
+        @include sm {
+            text-align: center;
+        }
+    }
+
+    .locality-features-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @include sm {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .locality-features-individual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+
+            .feature-img-container {
+                height: 170px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                margin-bottom: 16px;
+            }
+
+            .bullet-list {
+                list-style: none;
+                font-family: 'Nimbus-Regular';
+
+                .bullet-feature {
+                    margin-bottom: 15px;
+
+                    &::before {
+                        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                        color: $yellow; /* Change the color */
+                        font-weight: bold; /* If you want it to be bold */
+                        display: inline-block; /* Needed to add space between the bullet and the text */
+                        width: 1.5em; /* Also needed for space (tweak if needed) */
+                        margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+                      }
+                }
+            }
+        }
+
+        .car-features {
+            flex: 1 1 33%;
+            img {
+                width: 170px;
+            }
+        }
+        .trees-features {
+            flex: 1 1 33%;
+            margin: 0 20px;
+
+            @include sm {
+                margin: 20px 0;
+            }
+
+            img {
+                width: 150px;
+            }
+        }
+        .house-features {
+            flex: 1 1 33%;
+            img {
+                width: 180px;
+            }
+        }
+    }
+}
+
+.map-image-container-bottom {
+    width: calc(100% + 60px);
+    height: 550px;
+    margin-left: -30px;
+    border-top: 3px solid $yellow;
+    background: url('../../../assets/img/locality_map.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}

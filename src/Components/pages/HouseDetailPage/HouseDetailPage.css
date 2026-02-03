@@ -1,0 +1,166 @@
+.bg-for-large-screens {
+  background-color: #F5CE42;
+  width: 100%;
+}
+
+.house-features-section {
+  width: 100%;
+  height: 28.5714285714vw;
+  max-width: 1200px;
+  max-height: 342.8571428571px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.house-features-section .house-feature {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5CE42;
+  font-size: calc(1.35rem + 0.25vw);
+}
+.house-features-section .house-feature p {
+  font-family: "SpaceGrotesk-Medium" !important;
+}
+.house-features-section .house-feature:nth-of-type(2) {
+  position: relative;
+}
+.house-features-section .house-feature:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 75%;
+  width: 1px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.house-features-section .house-feature:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 75%;
+  width: 1px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.house-features-section .house-feature p {
+  margin: 0;
+}
+
+.virtual-guide-and-video-section {
+  width: calc(100% - 120px);
+  margin: 0 auto 100px auto;
+  max-width: 1200px;
+}
+@media (max-width: 992px) {
+  .virtual-guide-and-video-section {
+    width: calc(100% - 60px);
+    margin: 0 auto 50px auto;
+  }
+}
+@media (max-width: 319px) {
+  .virtual-guide-and-video-section {
+    width: calc(100% - 30px);
+  }
+}
+.virtual-guide-and-video-section .virtual-guide-article-wrapper {
+  margin: 0;
+}
+.virtual-guide-and-video-section .virtual-guide-article-wrapper h1 {
+  padding-left: 60px;
+}
+@media (max-width: 769px) {
+  .virtual-guide-and-video-section .virtual-guide-article-wrapper h1 {
+    padding-left: 0px;
+    font-size: 1.4rem;
+  }
+}
+.virtual-guide-and-video-section .virtual-guide-article-content {
+  border-left: 5px solid #F5CE42;
+  border-bottom: 5px solid #F5CE42;
+  padding: 0 0 60px 60px;
+}
+@media (max-width: 992px) {
+  .virtual-guide-and-video-section .virtual-guide-article-content {
+    padding: 0 0 40px 40px;
+  }
+}
+@media (max-width: 769px) {
+  .virtual-guide-and-video-section .virtual-guide-article-content {
+    padding: 0;
+    border: none;
+    margin-bottom: 30px;
+  }
+}
+.virtual-guide-and-video-section .house-virtual-guide-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.virtual-guide-and-video-section .house-virtual-guide-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.virtual-guide-and-video-section .video-article-wrapper {
+  border-bottom: 5px solid #F5CE42;
+  border-right: 5px solid #F5CE42;
+  margin: 0;
+  padding: 30px 60px 100px 0;
+}
+@media (max-width: 769px) {
+  .virtual-guide-and-video-section .video-article-wrapper {
+    padding: 0;
+    border: none;
+  }
+}
+.virtual-guide-and-video-section .video-article-wrapper h1 {
+  margin: 0 0 20px 0;
+}
+@media (max-width: 769px) {
+  .virtual-guide-and-video-section .video-article-wrapper h1 {
+    font-size: 1.4rem;
+  }
+}
+
+.house-detail-gallery-title {
+  width: calc(100% - 120px);
+  margin: 0 auto 0 auto;
+  max-width: 1200px;
+}
+@media (max-width: 992px) {
+  .house-detail-gallery-title {
+    width: calc(100% - 60px);
+    margin: 0 auto 20px auto;
+  }
+}
+@media (max-width: 319px) {
+  .house-detail-gallery-title {
+    width: calc(100% - 30px);
+  }
+}
+
+.ground-plan-gallery {
+  width: calc(100% - 120px);
+  margin: 30px auto 50px auto;
+  max-width: 1200px;
+}
+@media (max-width: 992px) {
+  .ground-plan-gallery {
+    width: calc(100% - 60px);
+    margin: 0 auto 30px auto;
+  }
+}
+@media (max-width: 319px) {
+  .ground-plan-gallery {
+    width: calc(100% - 30px);
+  }
+}
+.ground-plan-gallery img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=HouseDetailPage.css.map */

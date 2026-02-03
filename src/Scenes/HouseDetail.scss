@@ -1,0 +1,101 @@
+@import '../stylesheet/styles/breakpoints';
+@import '../stylesheet/styles/colors';
+
+.house-detail-hero-bg-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+
+    #house-detail-relative-container {
+        height: 80vh;
+        max-height: 1000px;
+        position: relative;
+
+        .house-detail-hero-bg-cover {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgba(255,255,255,.6) 70%, rgba(255,255,255,1) 100%),
+                        linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0,0,0,.3) 70%, rgba(0,0,0,.5) 100%);
+            background-blend-mode: overlay;
+            z-index: 0;
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .house-detail-cover-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+    }
+}
+
+.house-detail-hero-content {
+    height: calc(80vh - 160px);
+    max-height: calc(1000px - 160px);
+    padding: 40px 60px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include md {
+        padding: 20px 30px;
+        height: calc(80vh - 130px);
+        max-height: calc(1000px - 130px);
+    }
+
+    @include xs {
+        height: calc(80vh - 100px);
+        max-height: calc(1000px - 100px);
+    }
+
+    .title-scroll-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        /*
+        h1 {
+            font-weight: 500;
+            max-width: 30ch;
+            margin: 0;
+            font-size: 2rem;
+            @include sm {
+                font-size: 1.8rem;
+            }
+            @include xs {
+                font-size: 1.4rem;
+                margin-right: 24px;
+            }
+        }*/
+
+        img {
+            height: 40px;
+            transition: transform .3s ease;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+
+            @include md {
+                height: 35px;
+            }
+
+            @include sm {
+                height: 28px;
+            }
+        }
+    }
+    
+    
+}

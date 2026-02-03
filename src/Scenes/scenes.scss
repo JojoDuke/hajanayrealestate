@@ -1,0 +1,43 @@
+@import '../stylesheet/styles/colors';
+@import '../stylesheet/styles/breakpoints';
+
+.heading-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: calc(100% - 120px);
+    max-width: 1200px;
+    margin: -90px auto 0 auto;
+
+    @include md {
+        width: calc(100% - 60px);
+    }
+    @include xxs {
+        width: calc(100% - 30px);
+    }
+}
+
+.page-title {
+    margin: 0;
+    padding: 30px 20px 0 20px;
+    border: 3px solid $yellow;
+    border-bottom: none;
+    flex: 0 0 280px;
+
+    @include lg {
+        font-size: 1.6rem;
+        flex: 0 0 220px;
+        padding: 30px 15px 0 15px;
+    }
+
+    @include sm {
+        font-size: 1.4rem;
+        flex: 0 0 200px;
+    }
+}
+
+.border-helper { 
+    border-bottom: 3px solid $yellow;
+    flex: 1 0 auto;
+    height: 1px;
+}

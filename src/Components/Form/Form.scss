@@ -1,0 +1,196 @@
+@import '../../stylesheet/styles/breakpoints';
+@import '../../stylesheet/styles/colors';
+
+form {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    border: 5px solid $yellow;
+    padding: 60px;
+
+    @include sm {
+        padding: 30px;
+    }
+
+    @include sm {
+        padding: 20px;
+    }
+
+    .non-selectable {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+    }
+
+    .form-title {
+        margin: 0 0 40px 0;
+    }    
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 20px;
+
+        .error-msg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1em;
+            background-color: $yellow;
+            color: black;
+            padding: .3em;
+            @include xs {
+                font-size: .7em;
+            }
+        }
+
+        label {
+          position: relative;
+          font-size: 120%;
+          cursor: text;
+          opacity: 1;
+          transition: all .2s;
+          @include xs {
+              font-size: 90%;
+          }
+        }
+      
+        .input-text {
+            font-family: 'SpaceGrotesk-Medium', sans-serif;
+            font-size: 180%;
+            width: 100% !important;
+            max-width: 100%;
+            border: 2px solid $yellow;
+            border-radius: 0px;  
+            padding: 0;
+            padding: 8px;
+            @include xs {
+                font-size: 120%;
+            }
+        }
+
+        #mssg {
+            font-size: 160%;
+            min-height: 200px;
+            max-height: 600px;
+            @include xs {
+                font-size: 120%;
+            }
+        }
+
+        .input-text:focus {
+            outline: none;
+        }
+    }
+
+    .check-button-container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 30px; 
+
+        @include xs {
+            flex-direction: column;
+        }
+        
+        .clickable:hover {
+            cursor: pointer;
+        }
+
+        span {
+            position: absolute;
+            bottom: 0;
+            left: 2.9em;
+            font-size: .7em;
+            background-color: transparent;
+            color: black;
+            padding: .3em;
+        }
+        
+        
+        .checkbox-container {
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 80%;
+            font-size: 100%;
+
+            @include xs {
+                width: 100%;
+                font-size: 80%;
+            }
+
+            #check-error {
+                font-size: .8em;
+                top: -2.5em;
+                left: 0;
+                height: fit-content;
+                padding-right: 10px;
+                padding-left: 10px;
+                background-color: $yellow;
+                @media screen and (max-width: 320px) {
+                    top: -3.5em;
+                }
+            }
+
+            input[type=checkbox] {
+                -webkit-appearance: none;
+                background: white;
+                border: 2px solid $yellow;
+                border-radius: 0px; 
+                position: relative;
+                min-width: 25px;
+                height: 25px;
+                margin: 0;
+                @include xs {
+                    min-width: 20px;
+                    height: 20px;
+                }
+            }
+
+            input:checked {
+                    background: $yellow;
+                    border: none;
+                }
+                
+                
+                input:checked:after {
+                    content: '';
+                    position: absolute;
+                    top: 0.05em;
+                    left: 0.37em;
+                    background-color: $yellow;
+                }
+            
+
+            label {
+                font-size: 1em;
+                margin-left: 1.5em;
+            }
+
+        }    
+            
+        .yellow-button {
+            padding: .5em 1.7em .45em 1.7em;
+            font-family: inherit;
+            font-size: 1.2em;
+            border: none;
+            margin-left: 1.5em;
+            @include xs {
+                margin: 20px 0;
+                width: fit-content;
+            }
+        }
+
+        
+    }
+}

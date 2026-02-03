@@ -1,0 +1,83 @@
+{
+    "blocks": [
+      {
+        "key": "52fb3",
+        "text": "ahoj, já jsem Honza a tohle je tučný text, za kterým následuje text kurzívou",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [
+          {
+            "offset": 22,
+            "length": 19,
+            "style": "BOLD"
+          },
+          {
+            "offset": 22,
+            "length": 14,
+            "style": "UNDERLINE"
+          },
+          {
+            "offset": 63,
+            "length": 13,
+            "style": "ITALIC"
+          },
+          {
+            "offset": 37,
+            "length": 19,
+            "style": "UNDERLINE"
+          }
+        ],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "fm4ib",
+        "text": "",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "ccd4i",
+        "text": "dále bych potřeboval vyzkoušet, jak fungují jednotlivé blok",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [
+          {
+            "offset": 15,
+            "length": 1,
+            "style": "SUPERSCRIPT"
+          }
+        ],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "cms8h",
+        "text": "",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "fr886",
+        "text": "ssadssadasd",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [
+          {
+            "offset": 0,
+            "length": 11,
+            "style": "UNDERLINE"
+          }
+        ],
+        "entityRanges": [],
+        "data": {}
+      }
+    ],
+    "entityMap": {}
+  }

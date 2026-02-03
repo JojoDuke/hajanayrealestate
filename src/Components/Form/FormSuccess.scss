@@ -1,0 +1,104 @@
+@import '../../stylesheet/styles/colors';
+@import '../../stylesheet/styles/breakpoints';
+
+
+.form-success {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    
+    .items-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+
+        h2 {
+            margin-top: 10%;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.spinner {
+    position: relative;
+    border: 10px solid black;
+    border-radius: 50%;
+    border-top: 10px solid $yellow;
+    height: 7rem;
+    width: 7rem;
+    animation: spin 1s linear infinite;
+    transition: all .5s ease;
+
+}
+
+  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.checked {
+    animation: none;
+    border-color: black;
+    transition: border 0.5 ease-out;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    
+    &.line {
+      stroke-dashoffset: 1000;
+      -webkit-animation: dash .9s .35s ease-in-out forwards;
+      animation: dash .9s .35s ease-in-out forwards;
+    }
+
+    &.check {
+        stroke-dashoffset: -100;
+        -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+        animation: dash-check .9s .35s ease-in-out forwards;
+      }
+    
+    @-webkit-keyframes dash {
+        0% {
+          stroke-dashoffset: 1000;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+      
+      @keyframes dash {
+        0% {
+          stroke-dashoffset: 1000;
+        }
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+    
+      @-webkit-keyframes dash-check {
+        0% {
+          stroke-dashoffset: -100;
+        }
+        100% {
+          stroke-dashoffset: 900;
+        }
+      }
+      
+      @keyframes dash-check {
+        0% {
+          stroke-dashoffset: -100;
+        }
+        100% {
+          stroke-dashoffset: 900;
+        }
+      }
+  }
+  
+  
+

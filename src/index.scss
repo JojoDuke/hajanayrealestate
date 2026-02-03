@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Nimbus-Regular';
+  src: url('./stylesheet/fonts/nimbus-sans-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Nimbus-Bold';
+  src: url('./stylesheet/fonts/nimbus-sans-bold.otf') format('opentype');
+}
+
+  @font-face {
+    font-family: 'SpaceGrotesk-Medium';
+    src: url('./stylesheet/fonts/SpaceGrotesk-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url('./stylesheet/fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'SpaceGrotesk-Bold';
+    src: url('./stylesheet/fonts/SpaceGrotesk-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'SpaceGrotesk-SemiBold';
+    src: url('./stylesheet/fonts/SpaceGrotesk-SemiBold.ttf') format('truetype');
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'SpaceGrotesk-Medium', 'Nimbus-Regular', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    
+    >svg {
+      display: none;
+    }
+
+    p {
+      font-family: 'Nimbus-Regular';
+    }
+    
+  
+    /* TODO */
+    ::-moz-selection { /* Code for Firefox */
+      background: lightgrey;
+    }
+  
+    ::selection {
+      background: lightgrey;
+    }
+  }
+  
+  #root {
+    position: relative;
+
+    .app {
+      #ReactSimpleImageViewer {
+        z-index: 6000 !important;
+      }
+    }
+  }
+  
+  code {
+    font-family: 'SpaceGrotesk-Medium', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }

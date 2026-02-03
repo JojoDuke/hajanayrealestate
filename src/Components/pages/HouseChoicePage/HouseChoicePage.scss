@@ -1,0 +1,26 @@
+@import '../../../stylesheet/styles/breakpoints';
+
+.house-choice-section {
+    margin: 80px auto 150px auto;
+    max-width: 1200px;
+    width: calc(100% - 120px);
+    @include md {
+        width: calc(100% - 60px);
+    }
+}
+
+.mobile-house-choice-section {
+    width: calc(100% - 120px);
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    @include md {
+        width: calc(100% - 60px);
+    }
+    @include sm {
+        margin-top: 80px;
+    }
+
+    @include xxs {
+        width: calc(100% - 30px);
+    }
+}

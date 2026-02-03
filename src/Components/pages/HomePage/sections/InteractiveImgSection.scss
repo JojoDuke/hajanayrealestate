@@ -1,0 +1,75 @@
+@import '../../../../stylesheet/styles/breakpoints';
+@import '../../../../stylesheet/styles/colors';
+
+.interactive-img-section {
+    margin: 30px 0 180px 0;
+
+    @include sm {
+        width: calc(100% - 60px);
+        margin: 60px auto 100px auto;
+    }
+
+    .house-choice-heading-and-border-wrapper {
+        max-width: 1200px;
+        margin: 0 auto 60px auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        position: relative;
+
+        @media screen and (max-width: 1280px) {
+            margin-left: 35px;
+        }
+
+        @include md {
+            margin-left: 25px;
+        }
+
+        .house-choice-heading-container {
+            border: 5px solid $yellow;
+            border-bottom: none;
+            padding: 40px 60px 0 25px;
+        }
+
+        .house-choice-heading-border-helper {
+            border-bottom: 5px solid $yellow;
+            height: 1px;
+            flex: 1 1 auto;
+        }
+
+        /*
+        .side-border-helper {
+            position: absolute;
+            bottom: 0;
+            left: 1190px;
+            width: calc((100vw - 1200px) / 2);
+            height: 1px;
+            border-bottom: 5px solid $yellow;
+        }
+        */
+    }
+
+    .house-choice-map-wrapper {
+        width: calc(100% - 120px);
+        max-width: 1150px;
+        margin: 0 auto;
+
+        @include md {
+            width: calc(100% - 60px);
+        }
+    }
+}
+
+.house-choice-bottom-border-helper {
+    border-bottom: 5px solid $yellow;
+    height: 60px;
+}
+
+.house-choice-heading {
+    font-size: 1.7rem;
+    margin: 0;
+
+    @include sm {
+        margin-bottom: 20px;
+    }
+}

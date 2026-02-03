@@ -1,0 +1,65 @@
+.about-project-section {
+  width: calc(100% - 120px);
+  margin: 80px auto;
+  max-width: 1200px;
+}
+@media (max-width: 992px) {
+  .about-project-section {
+    width: calc(100% - 60px);
+    margin: 50px auto;
+  }
+}
+@media (max-width: 319px) {
+  .about-project-section {
+    width: calc(100% - 30px);
+  }
+}
+.about-project-section .about-text-editor-container {
+  max-width: 70ch;
+}
+
+.about-hajany-section {
+  width: calc(100% - 120px);
+  margin: 100px auto 100px auto;
+  max-width: 1200px;
+}
+@media (max-width: 992px) {
+  .about-hajany-section {
+    width: calc(100% - 60px);
+  }
+}
+@media (max-width: 769px) {
+  .about-hajany-section {
+    margin: 50px auto;
+  }
+}
+@media (max-width: 319px) {
+  .about-hajany-section {
+    width: calc(100% - 30px);
+  }
+}
+.about-hajany-section p {
+  max-width: 50ch;
+  margin-bottom: 20px;
+}
+
+.hajany-imgs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin: 40px 0 0 0;
+}
+@media (max-width: 576px) {
+  .hajany-imgs-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.hajany-imgs-container img {
+  width: 100%;
+  height: 100%;
+}
+.hajany-imgs-container #large-img {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}/*# sourceMappingURL=AboutProjectPage.css.map */

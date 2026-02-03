@@ -1,0 +1,166 @@
+@charset "UTF-8";
+.locality-page-container {
+  width: calc(100% - 120px);
+  max-width: 1200px;
+  margin: 100px auto;
+}
+@media (max-width: 992px) {
+  .locality-page-container {
+    width: calc(100% - 60px);
+    margin: 50px auto 100px auto;
+  }
+}
+@media (max-width: 769px) {
+  .locality-page-container {
+    margin: 50px auto 0 auto;
+  }
+}
+@media (max-width: 319px) {
+  .locality-page-container {
+    width: calc(100% - 30px);
+  }
+}
+
+.locality-description-wrapper {
+  padding: 5px 0 50px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 769px) {
+  .locality-description-wrapper {
+    border: none;
+    padding: 0 0 50px 0;
+  }
+}
+.locality-description-wrapper .map-image-container {
+  flex: 0 0 calc(300px + 10vw);
+  margin-left: calc(10px + 5vw);
+  max-width: 450px;
+  height: auto;
+}
+.locality-description-wrapper .map-image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.locality-description-wrapper h2 {
+  margin-top: 0;
+}
+.locality-description-wrapper p {
+  max-width: 70ch;
+  flex: 0 0 1fr;
+  margin: 0;
+}
+
+.locality-features-wrapper {
+  width: 100%;
+  padding: 40px;
+  padding-left: 20px;
+  border: 3px solid #F5CE42;
+  border-left: none;
+  position: relative;
+}
+@media (max-width: 769px) {
+  .locality-features-wrapper {
+    border-right: none;
+    border-bottom: none;
+    padding: 20px 0;
+  }
+}
+.locality-features-wrapper::before {
+  content: "";
+  display: inline-block;
+  height: 100px;
+  width: 1px;
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  border-left: 3px solid #F5CE42;
+}
+@media (max-width: 769px) {
+  .locality-features-wrapper::before {
+    display: none;
+  }
+}
+.locality-features-wrapper h2 {
+  text-align: left;
+}
+@media (max-width: 769px) {
+  .locality-features-wrapper h2 {
+    text-align: center;
+  }
+}
+.locality-features-wrapper .locality-features-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 769px) {
+  .locality-features-wrapper .locality-features-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.locality-features-wrapper .locality-features-content .locality-features-individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+}
+.locality-features-wrapper .locality-features-content .locality-features-individual .feature-img-container {
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+.locality-features-wrapper .locality-features-content .locality-features-individual .bullet-list {
+  list-style: none;
+  font-family: "Nimbus-Regular";
+}
+.locality-features-wrapper .locality-features-content .locality-features-individual .bullet-list .bullet-feature {
+  margin-bottom: 15px;
+}
+.locality-features-wrapper .locality-features-content .locality-features-individual .bullet-list .bullet-feature::before {
+  content: "•"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #F5CE42; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.5em; /* Also needed for space (tweak if needed) */
+  margin-left: -1.5em; /* Also needed for space (tweak if needed) */
+}
+.locality-features-wrapper .locality-features-content .car-features {
+  flex: 1 1 33%;
+}
+.locality-features-wrapper .locality-features-content .car-features img {
+  width: 170px;
+}
+.locality-features-wrapper .locality-features-content .trees-features {
+  flex: 1 1 33%;
+  margin: 0 20px;
+}
+@media (max-width: 769px) {
+  .locality-features-wrapper .locality-features-content .trees-features {
+    margin: 20px 0;
+  }
+}
+.locality-features-wrapper .locality-features-content .trees-features img {
+  width: 150px;
+}
+.locality-features-wrapper .locality-features-content .house-features {
+  flex: 1 1 33%;
+}
+.locality-features-wrapper .locality-features-content .house-features img {
+  width: 180px;
+}
+
+.map-image-container-bottom {
+  width: calc(100% + 60px);
+  height: 550px;
+  margin-left: -30px;
+  border-top: 3px solid #F5CE42;
+  background: url("../../../assets/img/locality_map.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}/*# sourceMappingURL=LocalityPage.css.map */

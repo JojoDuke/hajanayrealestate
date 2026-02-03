@@ -1,0 +1,6 @@
+{
+    "installCommand": "npm install --legacy-peer-deps",
+    "buildCommand": "CI=false NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "framework": "create-react-app",
+    "outputDirectory": "build"
+}
