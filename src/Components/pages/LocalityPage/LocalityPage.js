@@ -21,11 +21,11 @@ const LocalityPage = () => {
 
     const windowSize = useWindowSize();
 
-    const hajanyLocalityContent = {
+    const zelesiceLocalityContent = {
         blocks: [
-            { key: "l1", text: "Hajany jsou bezpečnou a příjemnou obcí, kde jsme již dříve postavili a úspěšně prodali 50 rodinných domů. Díky tomu zde vyrostla silná komunita mladých rodin, které si užívají klidné prostředí, přátelské sousedské vztahy a komfort moderního bydlení.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l2", text: "Představte si místo, kde se spojuje pohodlí moderního domova s kouzlem jihomoravské přírody. Hajany, malebná obec v okrese Brno-venkov, nabízejí ideální kombinaci klidu, soukromí a skvělé dostupnosti do Brna.", type: "unstyled", depth: 0, inlineStyleRanges: [{ offset: 36, length: 55, style: "BOLD" }, { offset: 163, length: 44, style: "BOLD" }], entityRanges: [], data: {} },
-            { key: "l3", text: "Vše, co potřebujete pro pohodlný život, najdete přímo v obci – soukromou mateřskou školku, obecní úřad, sportovní i dětská hřiště, restauraci, sokolovnu a obchod. Hajany jsou místem, kde si můžete užívat soukromí a pohodu venkovského života, aniž byste se museli vzdát výhod města.", type: "unstyled", depth: 0, inlineStyleRanges: [{ offset: 163, length: 118, style: "BOLD" }], entityRanges: [], data: {} }
+            { key: "l1", text: "Želešice jsou obcí rozkládající se v blízkosti města Modřice v okrese Brno-venkov. Jedná se o obec, která svým občanům poskytuje klidné bydlení obklopené malebnou přírodou, kde můžete trávit volný čas s rodinou. V obci žije přibližně 1600 obyvatel. ", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+            { key: "l2", text: "Jednou z největších výhod obce je její dostupnost do Brna. Jen 8 minut od obce se nachází obchodní a zábavní centrum OC Olympia. V samotném centru Brna jste autem za 15 minut. Pro děti je obec vybavena dvěma mateřskými a dvěma základními školami, dále se zde nachází obecní úřad, pošta, fotbalové hřiště, dětské hřiště, restaurace, cukrárna, kostel. ", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+            { key: "l3", text: "O zábavu a sportovní vyžití je v Želešicích postaráno. Nachází se zde Kynologický klub, Myslivecký spolek a v neposlední řadě Vinařský spolek. Milovníky kol a pěších túr potěší cyklotrasy, které se v okolí nachází. Zavítat můžete například do přírodního parku Bobrava, vydat se po Brněnské vinařské stezce nebo provětrat kolo na cyklostezce s názvem Želešické KOLORÁDO.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} }
         ],
         entityMap: {}
     };
@@ -34,18 +34,18 @@ const LocalityPage = () => {
         <>
             <section className="locality-page-container">
                 <div className="locality-description-wrapper">
-                    <TextEditorText data={hajanyLocalityContent}></TextEditorText>
+                    <TextEditorText data={zelesiceLocalityContent}></TextEditorText>
                     {windowSize.width > 769 &&
 
                         <div className="map-image-container">
-                            <a href="https://www.google.com/maps/place/664+43+Hajany/" target="_blank" rel="noreferrer">
-                                <img src={map} alt="Mapa okolí Hajany" loading="lazy"></img>
+                            <a href="https://www.google.com/maps/place/664+43+%C5%BDele%C5%A1ice/" target="_blank" rel="noreferrer">
+                                <img src={map} alt="Mapa okolí Želešice" loading="lazy"></img>
                             </a>
                         </div>
                     }
                 </div>
                 <div className="locality-features-wrapper">
-                    <h2>Čím si vás Hajany získají</h2>
+                    <h2>Čím si vás Želešice získají</h2>
                     <div className="locality-features-content">
                         <div className="locality-features-individual car-features">
                             <div className="feature-img-container">
@@ -79,7 +79,7 @@ const LocalityPage = () => {
                     </div>
                 </div>
                 {windowSize.width <= 769 &&
-                    <a href="https://www.google.com/maps/place/664+43+Hajany/" target="_blank" rel="noreferrer">
+                    <a href="https://www.google.com/maps/place/664+43+%C5%BDele%C5%A1ice/" target="_blank" rel="noreferrer">
                         <div className="map-image-container-bottom">
                         </div>
                     </a>

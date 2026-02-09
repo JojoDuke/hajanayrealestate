@@ -167,3 +167,28 @@ footer {
         }
     }
 }
+
+.footer-legal-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-family: 'SpaceGrotesk-Regular';
+    font-size: 0.8rem;
+    min-width: 180px;
+
+    @include sm {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    a {
+        color: #000000;
+        text-decoration: none;
+        margin-bottom: 5px;
+        white-space: nowrap;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

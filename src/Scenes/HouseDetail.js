@@ -47,7 +47,7 @@ const HouseDetail = () => {
                     <div className="house-detail-hero-bg-container">
                         <div id="house-detail-relative-container">
                             <div className="house-detail-hero-bg-cover"></div>
-                            <img src={"https://api.moderni-hajany.cz" + house.title_image} className="house-detail-cover-img" alt="titulní obrázek domu" loading="lazy" />
+                            <img src={(process.env.REACT_APP_BACKEND_SERVER || "https://api.moderni-zelesice.cz") + house.title_image} className="house-detail-cover-img" alt="titulní obrázek domu" loading="lazy" />
                         </div>
                     </div>
                     <div className="house-detail-hero-content">

@@ -13,7 +13,7 @@ const ImageGallery = ({ images, startIndex = 0, fullPhotoList = [] }) => {
     // Use fullPhotoList if provided, otherwise build it from images
     const photoList = fullPhotoList.length > 0
         ? fullPhotoList
-        : images.map((image) => (process.env.REACT_APP_BACKEND_SERVER || "https://api.moderni-hajany.cz") + image);
+        : images.map((image) => (process.env.REACT_APP_BACKEND_SERVER || "https://api.moderni-zelesice.cz") + image);
 
     const getRowStyling = (length) => {
         let remainderRows = 0;
@@ -54,7 +54,7 @@ const ImageGallery = ({ images, startIndex = 0, fullPhotoList = [] }) => {
         <div className="image-gallery-container">
             <ul style={rowStyleObject}>
                 {images.map((image, index) => {
-                    const photo = (process.env.REACT_APP_BACKEND_SERVER || "https://api.moderni-hajany.cz") + image;
+                    const photo = (process.env.REACT_APP_BACKEND_SERVER || "https://api.moderni-zelesice.cz") + image;
                     let altProp = photo.split("/")[photo.split("/").length - 1].split(".")[0];
                     return (
                         <li key={index}>

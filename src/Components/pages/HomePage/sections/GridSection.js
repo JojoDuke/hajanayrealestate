@@ -36,10 +36,10 @@ const GridSection = ({ page, refProp }) => {
         content: JSON.stringify({
             blocks: [{
                 key: "efam8",
-                text: "Obec Hajany vám nabízí dokonalou rovnováhu mezi přírodou a pohodlím moderního bydlení. Nachází se pouhých 15 minut od Brna a okouzlí vás klidným prostředím, malebnou přírodou a širokými možnostmi relaxace i sportovního vyžití. Díky skvělé dopravní dostupnosti se snadno dostanete nejen do Brna, ale i na dálnici D1.",
+                text: "Výhody města s vlastní zahradou. To přesně nabízí obec Želešice, kterou si okamžitě zamilujete. Nachází se pouhých 15 minut od Brna a svým obyvatelům poskytuje malebnou přírodu s relaxačním a sportovním vyžitím. Skvělá dostupnost na D1. V obci se nachází základní škola, mateřská škola, obecní úřad, pošta, fotbalové hřiště, dětské hřiště, restaurace, obchod, cukrárna.",
                 type: "unstyled",
                 depth: 0,
-                inlineStyleRanges: [{ offset: 23, length: 62, style: "BOLD" }],
+                inlineStyleRanges: [{ offset: 0, length: 32, style: "BOLD" }],
                 entityRanges: [],
                 data: {}
             }],

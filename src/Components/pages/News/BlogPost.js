@@ -30,7 +30,8 @@ const BlogPost = ({ blogpost }) => {
             </div>
             <div className="article-images-container">
                 {blogpost.images.map((image) => {
-                    let src = "https://api.moderni-hajany.cz" + image;
+                    const backendUrl = process.env.REACT_APP_BACKEND_SERVER || 'https://api.moderni-zelesice.cz';
+                    let src = backendUrl + image;
                     return <img src={src} key={src} alt={image.split("/media/")[1]} />
                 })}
             </div>

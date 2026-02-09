@@ -12,6 +12,7 @@
     @include md {
         width: calc(100% - 60px);
     }
+
     @include xxs {
         width: calc(100% - 30px);
     }
@@ -20,7 +21,8 @@
 .page-title {
     margin: 0;
     padding: 30px 20px 0 20px;
-    border: 3px solid $yellow;
+    border: 3px solid #F5CE42;
+    /* Fallback to yellow if variable fails */
     border-bottom: none;
     flex: 0 0 280px;
 
@@ -36,8 +38,36 @@
     }
 }
 
-.border-helper { 
-    border-bottom: 3px solid $yellow;
+.border-helper {
+    border-bottom: 3px solid #F5CE42;
     flex: 1 0 auto;
     height: 1px;
+}
+
+.legal-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 60px;
+    font-family: 'SpaceGrotesk-Regular';
+    line-height: 1.6;
+
+    h2,
+    h3 {
+        margin-top: 30px;
+        color: #000000;
+        /* Use hex instead of variable to be safe */
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    ul {
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    @include md {
+        padding: 0 30px;
+    }
 }

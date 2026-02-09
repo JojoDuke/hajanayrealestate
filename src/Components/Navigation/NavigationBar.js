@@ -4,7 +4,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 import { useWindowSize } from '../../Utils/useWindowSize';
 import NavigationItems from './NavigationItems';
 import DrawerToggleButton from './DrawerToggleButton';
-import logo from '../../assets/logo_hajany.png'
+import logo from '../../assets/logo.png'
 /* SASS */
 import './Navigation.scss';
 
@@ -22,7 +22,7 @@ const NavigationBar = (props) => {
             <div className={(location.pathname === '/' || /^\/detail-domu\/{1}\d/.test(location.pathname)) ? "header-content" : "header-content not-home"}>
                 {(location.pathname === '/' || /^\/detail-domu\/{1}\d/.test(location.pathname)) &&
                     <div className="logo-wrapper" onClick={() => history.push('/')}>
-                        <img src={logo} alt="Moderní Hajany logo" className="logo" />
+                        <img src={logo} alt="Moderní Želešice logo" className="logo" />
                     </div>
                 }
                 <nav className="navigation">

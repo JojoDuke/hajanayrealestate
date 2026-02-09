@@ -45,7 +45,7 @@ const AboutProjectPage = ({ page }) => {
     const carImages = images.slice(0, 3).map(image => {
         if (image.startsWith('http')) return image;
         // Use production images as fallback if localhost is chosen or if fetch fails
-        return "https://api.moderni-hajany.cz" + image;
+        return "https://api.moderni-zelesice.cz" + image;
     });
     const renderImages = [aboutHajany1, aboutHajany2, aboutHajany3];
     const pastProjectImages = [pastProject1, pastProject2, pastProject3];

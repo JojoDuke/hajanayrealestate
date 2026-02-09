@@ -1,8 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 /*OWN*/
-import logo from '../../assets/logo_hajany.png';
+import logo from '../../assets/logo.png';
 import stavbykrocaLogo from '../../assets/stavbykroca_logo.svg';
 import realmajorLogo from '../../assets/realmajor_logo.svg';
 
@@ -16,7 +16,7 @@ const Footer = () => {
         <footer>
             <div className="footer-container">
                 <div className="footer-logo-hajany-container" onClick={() => history.push('/')} style={{ cursor: 'pointer' }}>
-                    <img className="footer-logo-img" src={logo} alt="Moderní Hajany logo" />
+                    <img className="footer-logo-img" src={logo} alt="Moderní Želešice logo" />
                 </div>
                 <div className="footer-logos-container">
                     <div className="footer-logos-inner">
@@ -37,6 +37,11 @@ const Footer = () => {
                             +420 776 387 287<br />
                             info@realmajor.cz
                         </p>
+                    </div>
+                    <div className="footer-legal-links">
+                        <Link to="/aktuality#aml">AML</Link>
+                        <Link to="/aktuality#gdpr">GDPR</Link>
+                        <Link to="/aktuality#building-docs">Poučení o stavební dokumentaci</Link>
                     </div>
                 </div>
             </div>
