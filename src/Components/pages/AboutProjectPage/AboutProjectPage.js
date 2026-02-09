@@ -19,7 +19,8 @@ const AboutProjectPage = ({ page }) => {
     const { setImageViewerOpen, setImageViewerConfig } = useContext(ImageViewerContext);
 
     const pages = [...currentState.pages];
-    const images = pages.find(page => page.id === 2).sections[0].images;
+    const aboutPage = pages.find(page => page.id === 2);
+    const images = aboutPage && aboutPage.sections && aboutPage.sections[0] ? aboutPage.sections[0].images : [];
 
     const hajanyContent = {
         blocks: [
@@ -41,7 +42,11 @@ const AboutProjectPage = ({ page }) => {
         entityMap: {}
     };
 
-    const carImages = images.slice(0, 3).map(image => (process.env.REACT_APP_BACKEND_SERVER || "https://api.moderni-hajany.cz") + image);
+    const carImages = images.slice(0, 3).map(image => {
+        if (image.startsWith('http')) return image;
+        // Use production images as fallback if localhost is chosen or if fetch fails
+        return "https://api.moderni-hajany.cz" + image;
+    });
     const renderImages = [aboutHajany1, aboutHajany2, aboutHajany3];
     const pastProjectImages = [pastProject1, pastProject2, pastProject3];
 

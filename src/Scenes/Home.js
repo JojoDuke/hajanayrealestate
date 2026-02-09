@@ -18,27 +18,26 @@ const Home = () => {
     const executeScroll = () => scrollToRef(myRef)
     const { currentState } = useContext(BackendDataContext);
     const pages = [...currentState.pages];
-    const page = pages.find((page) => page.id === 1);
+    const page = pages.find((page) => page.id === 1) || { sections: [] };
 
     return (
         <>
-            {page &&
-                <div className="page-container">
-                    <div className="hero-video-bg-container">
-                        <div id="relative-container">
-                            <div className="hero-bg-cover"></div>
-                            <img src={heroImage} id="vid" alt="Hero background" />
-                        </div>
+            <div className="page-container">
+                <div className="hero-video-bg-container">
+                    <div id="relative-container">
+                        <div className="hero-bg-cover"></div>
+                        <img src={heroImage} id="vid" alt="Hero background" />
                     </div>
-                    <div className="hero-content">
-                        <div className="title-scroll-container">
-                            <img src={scrollDownButton} alt="Tlačítko posunout dolů" onClick={executeScroll} />
-                        </div>
+                </div>
+                <div className="hero-content">
+                    <div className="title-scroll-container">
+                        <img src={scrollDownButton} alt="Tlačítko posunout dolů" onClick={executeScroll} />
                     </div>
-                    <GridSection refProp={myRef} page={page} />
-                    <InteractiveImgSection />
-                    <FormSection />
-                </div>}
+                </div>
+                <GridSection refProp={myRef} page={page} />
+                <InteractiveImgSection />
+                <FormSection />
+            </div>
         </>
     );
 }

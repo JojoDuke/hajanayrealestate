@@ -5,23 +5,22 @@ import BackendDataContext from '../Context/BackendDataContext';
 const AboutProject = () => {
 
     const { currentState } = useContext(BackendDataContext);
-    const page = currentState.pages.find((page)=>page.id === 2);
+    const page = currentState.pages.find((page) => page.id === 2) || { sections: [{ images: [] }] };
 
 
-    return(
+    return (
         <>
-        {page &&
-        <div className="page-container">
-            <div className="heading-wrapper">
-                <h1 className="page-title">
-                    O&nbsp;projektu
-                </h1>
-                <div className="border-helper"></div>
+            <div className="page-container">
+                <div className="heading-wrapper">
+                    <h1 className="page-title">
+                        O&nbsp;projektu
+                    </h1>
+                    <div className="border-helper"></div>
+                </div>
+                <div className="page-content">
+                    <AboutProjectPage page={page} />
+                </div>
             </div>
-            <div className="page-content">
-                <AboutProjectPage page={page}/>
-            </div>
-        </div>}
         </>
     );
 }

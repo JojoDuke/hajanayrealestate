@@ -13,32 +13,84 @@ import './GridSection.scss';
 
 const GridSection = ({ page, refProp }) => {
 
-    const aboutProjectSection = page.sections.find((section) => section.id === 1);
-    const localitySection = page.sections.find((section) => section.id === 2);
-    const houseChoiceSection = page.sections.find((section) => section.id === 3);
-    const blogpostsSection = page.sections.find((section) => section.id === 4);
+    const aboutProjectSection = page.sections.find((section) => section.id === 1) || {
+        title: 'O projektu',
+        button: 'Více o projektu',
+        content: JSON.stringify({
+            blocks: [{
+                key: "efam8",
+                text: "Jsme rodinná developerská firma. Tentokrát vám přinášíme rodinné domy v jedné z nejžádanějších lokalit v těsné blízkosti Brna. Můžete tak čerpat výhody města a zároveň si užívat rodinný život se zahradou. V nabídce je několik novostaveb, které jsou navřeny architektem přímo pro vás.",
+                type: "unstyled",
+                depth: 0,
+                inlineStyleRanges: [{ offset: 0, length: 32, style: "BOLD" }],
+                entityRanges: [],
+                data: {}
+            }],
+            entityMap: {}
+        })
+    };
 
-    // MANUAL OVERRIDES TO MATCH PROJECT CURRENT (HAJANY)
-    if (localitySection) {
-        localitySection.content = JSON.stringify({
+    const localitySection = page.sections.find((section) => section.id === 2) || {
+        title: 'Lokalita',
+        button: 'Více o lokalitě',
+        content: JSON.stringify({
+            blocks: [{
+                key: "efam8",
+                text: "Obec Hajany vám nabízí dokonalou rovnováhu mezi přírodou a pohodlím moderního bydlení. Nachází se pouhých 15 minut od Brna a okouzlí vás klidným prostředím, malebnou přírodou a širokými možnostmi relaxace i sportovního vyžití. Díky skvělé dopravní dostupnosti se snadno dostanete nejen do Brna, ale i na dálnici D1.",
+                type: "unstyled",
+                depth: 0,
+                inlineStyleRanges: [{ offset: 23, length: 62, style: "BOLD" }],
+                entityRanges: [],
+                data: {}
+            }],
+            entityMap: {}
+        })
+    };
+
+    const houseChoiceSection = page.sections.find((section) => section.id === 3) || {
+        title: 'Nabídka domů',
+        button: 'Nabídka',
+        content: JSON.stringify({
+            blocks: [{
+                key: "efam8",
+                text: "Rodinný dům přesně podle vašich představ. Každý dům je navržen architektem tak, aby vám poskytoval co nejlepší bydlení.",
+                type: "unstyled",
+                depth: 0,
+                inlineStyleRanges: [{ offset: 0, length: 42, style: "BOLD" }],
+                entityRanges: [],
+                data: {}
+            }],
+            entityMap: {}
+        })
+    };
+
+    const blogpostsSection = page.sections.find((section) => section.id === 4) || {
+        title: 'Aktuality',
+        button: 'Více o aktualitách',
+        content: JSON.stringify({
             blocks: [
                 {
                     key: "efam8",
-                    text: "Obec Hajany vám nabízí dokonalou rovnováhu mezi přírodou a pohodlím moderního bydlení. Nachází se pouhých 15 minut od Brna a okouzlí vás klidným prostředím, malebnou přírodou a širokými možnostmi relaxace i sportovního vyžití. Díky skvělé dopravní dostupnosti se snadno dostanete nejen do Brna, ale i na dálnici D1.",
+                    text: "Buďte v obraze.",
                     type: "unstyled",
                     depth: 0,
-                    inlineStyleRanges: [{ offset: 23, length: 62, style: "BOLD" }],
+                    inlineStyleRanges: [{ offset: 0, length: 15, style: "BOLD" }],
+                    entityRanges: [],
+                    data: {}
+                },
+                {
+                    key: "9prr4",
+                    text: "Přinášíme vám novinky ze stavby a z celého procesu stavění. Buďte u toho s námi od samotného začátku.",
+                    type: "unstyled",
+                    depth: 0,
+                    inlineStyleRanges: [],
                     entityRanges: [],
                     data: {}
                 }
             ],
             entityMap: {}
-        });
-    }
-
-    if (blogpostsSection) {
-        blogpostsSection.button = "Více o aktualitách";
-    }
+        })
+    };
 
     const history = useHistory();
 

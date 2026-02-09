@@ -65,10 +65,10 @@ const MobileHouseChoice = ({ houses }) => {
             {windowSize.width <= 769 &&
                 <img src={visualMap} alt="vizualizace všech domů" width="100%" loading="lazy" />
             }
-            {(houses && houses.length !== 0) ?
+            {data.length > 0 &&
                 <div>
                     <Table columns={columns} data={data} />
-                </div> : null}
+                </div>}
         </>
     );
 }

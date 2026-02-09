@@ -32,60 +32,59 @@ const LocalityPage = () => {
 
     return (
         <>
-            {page &&
-                <section className="locality-page-container">
-                    <div className="locality-description-wrapper">
-                        <TextEditorText data={hajanyLocalityContent}></TextEditorText>
-                        {windowSize.width > 769 &&
+            <section className="locality-page-container">
+                <div className="locality-description-wrapper">
+                    <TextEditorText data={hajanyLocalityContent}></TextEditorText>
+                    {windowSize.width > 769 &&
 
-                            <div className="map-image-container">
-                                <a href="https://www.google.com/maps/place/664+43+Hajany/" target="_blank" rel="noreferrer">
-                                    <img src={map} alt="Mapa okolí Hajany" loading="lazy"></img>
-                                </a>
+                        <div className="map-image-container">
+                            <a href="https://www.google.com/maps/place/664+43+Hajany/" target="_blank" rel="noreferrer">
+                                <img src={map} alt="Mapa okolí Hajany" loading="lazy"></img>
+                            </a>
+                        </div>
+                    }
+                </div>
+                <div className="locality-features-wrapper">
+                    <h2>Čím si vás Hajany získají</h2>
+                    <div className="locality-features-content">
+                        <div className="locality-features-individual car-features">
+                            <div className="feature-img-container">
+                                <img src={car} alt="ikona auta"></img>
                             </div>
-                        }
-                    </div>
-                    <div className="locality-features-wrapper">
-                        <h2>Čím si vás Hajany získají</h2>
-                        <div className="locality-features-content">
-                            <div className="locality-features-individual car-features">
-                                <div className="feature-img-container">
-                                    <img src={car} alt="ikona auta"></img>
-                                </div>
-                                <ul className="bullet-list">
-                                    <li className="bullet-feature">bydlení vzdálené 15 minut od centra Brna </li>
-                                    <li className="bullet-feature">8 minut vzdálené obchodní a zábavní centrum OC Olympia</li>
-                                    <li className="bullet-feature">dopravní dostupnost</li>
-                                </ul>
+                            <ul className="bullet-list">
+                                <li className="bullet-feature">bydlení vzdálené 15 minut od centra Brna </li>
+                                <li className="bullet-feature">8 minut vzdálené obchodní a zábavní centrum OC Olympia</li>
+                                <li className="bullet-feature">dopravní dostupnost</li>
+                            </ul>
+                        </div>
+                        <div className="locality-features-individual trees-features">
+                            <div className="feature-img-container">
+                                <img src={trees} alt="ikona stromů"></img>
                             </div>
-                            <div className="locality-features-individual trees-features">
-                                <div className="feature-img-container">
-                                    <img src={trees} alt="ikona stromů"></img>
-                                </div>
-                                <ul className="bullet-list">
-                                    <li className="bullet-feature">výhody města s vlastní zahradou</li>
-                                    <li className="bullet-feature">malebná příroda a relaxace</li>
-                                </ul>
+                            <ul className="bullet-list">
+                                <li className="bullet-feature">výhody města s vlastní zahradou</li>
+                                <li className="bullet-feature">malebná příroda a relaxace</li>
+                            </ul>
+                        </div>
+                        <div className="locality-features-individual house-features">
+                            <div className="feature-img-container">
+                                <img src={house} alt="ikona domu"></img>
                             </div>
-                            <div className="locality-features-individual house-features">
-                                <div className="feature-img-container">
-                                    <img src={house} alt="ikona domu"></img>
-                                </div>
-                                <ul className="bullet-list">
-                                    <li className="bullet-feature">dobrá občanská vybavenost</li>
-                                    <li className="bullet-feature">soukromá mateřská školka</li>
-                                    <li className="bullet-feature">sportovní vyžití</li>
-                                </ul>
-                            </div>
+                            <ul className="bullet-list">
+                                <li className="bullet-feature">dobrá občanská vybavenost</li>
+                                <li className="bullet-feature">soukromá mateřská školka</li>
+                                <li className="bullet-feature">sportovní vyžití</li>
+                            </ul>
                         </div>
                     </div>
-                    {windowSize.width <= 769 &&
-                        <a href="https://www.google.com/maps/place/664+43+Hajany/" target="_blank" rel="noreferrer">
-                            <div className="map-image-container-bottom">
-                            </div>
-                        </a>
-                    }
-                </section>}
+                </div>
+                {windowSize.width <= 769 &&
+                    <a href="https://www.google.com/maps/place/664+43+Hajany/" target="_blank" rel="noreferrer">
+                        <div className="map-image-container-bottom">
+                        </div>
+                    </a>
+                }
+            </section>
         </>
     );
 }
