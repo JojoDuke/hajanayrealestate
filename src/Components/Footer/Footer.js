@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory, Link } from 'react-router-dom';
 
 /*OWN*/
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo_hajany.png';
 import stavbykrocaLogo from '../../assets/stavbykroca_logo.svg';
 import realmajorLogo from '../../assets/realmajor_logo.svg';
 
@@ -16,7 +16,7 @@ const Footer = () => {
         <footer>
             <div className="footer-container">
                 <div className="footer-logo-hajany-container" onClick={() => history.push('/')} style={{ cursor: 'pointer' }}>
-                    <img className="footer-logo-img" src={logo} alt="Moderní Želešice logo" />
+                    <img className="footer-logo-img" src={logo} alt="Moderní Hajany logo" />
                 </div>
                 <div className="footer-logos-container">
                     <div className="footer-logos-inner">
