@@ -34,12 +34,12 @@ const Tooltip = (props) => {
         <div onMouseEnter={props.mouseEnter} onMouseLeave={props.mouseLeave} className="tooltip-content">
             <h1>{props.houseNum}</h1>
             <div className="info-grid">
-                <div id="disposition"><span>Dispozice</span><p>{props.disposition}</p></div>
-                <div id="floor-area-icon"></div>
-                <div id="floor-area"><span>Plocha domu</span><p>{props.floorArea}</p></div>
-                <div id="lot-area-icon"></div>
-                <div id="lot-area"><span>Plocha pozemku</span><p>{props.lotArea}</p></div>
-                <div id="price"><span>Cena</span><p>{props.price}</p></div>
+                <div className="disposition">{props.disposition}</div>
+                <div className="floor-area-icon"></div>
+                <div className="floor-area">{props.floorArea}</div>
+                <div className="lot-area-icon"></div>
+                <div className="lot-area">{props.lotArea}</div>
+                <div className="price">{props.price}</div>
             </div>
             <NavLink to={"/detail-domu/" + props.id} exact>
                 <ButtonComponent>Více informací</ButtonComponent>
