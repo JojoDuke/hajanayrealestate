@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import { useMediaQuery } from 'react-responsive';
 /* Containers, Components and Utils */
@@ -17,6 +17,14 @@ const ImageMap = ({ houses }) => {
     const [thirdOpacity, setThirdOpacity] = useState('0');
     const [fourthOpacity, setFourthOpacity] = useState('0');
     const [fifthOpacity, setFifthOpacity] = useState('0');
+    const [sixthOpacity, setSixthOpacity] = useState('0');
+    const [seventhOpacity, setSeventhOpacity] = useState('0');
+    const [eighthOpacity, setEighthOpacity] = useState('0');
+    const [ninthOpacity, setNinthOpacity] = useState('0');
+    const [tenthOpacity, setTenthOpacity] = useState('0');
+    const [eleventhOpacity, setEleventhOpacity] = useState('0');
+    const [twelthOpacity, setTwelthOpacity] = useState('0');
+    const [thirteenthOpacity, setThirteenthOpacity] = useState('0');
 
 
     const history = useHistory();
@@ -26,15 +34,13 @@ const ImageMap = ({ houses }) => {
 
     const getHouse = (name) => {
         const found = houses && houses.find(h => h.name === name);
-        // FORCE available true for display if we are testing/demoing and API returns false
-        if (found) return { ...found, available: true };
-
+        if (found) return found;
         // Default mock if data missing
         return {
             id: name === 'A1' ? 1 : (name === 'A2' ? 2 : (name === 'A3' ? 3 : (name === 'A4' ? 4 : 5))),
             name,
             available: true,
-            price: '20 000 000 Kč',
+            price: '12 000 000 Kč',
             disposition: '5+kk',
             floor_area: '200 m²',
             lot_area: '500 m²'
@@ -53,12 +59,12 @@ const ImageMap = ({ houses }) => {
                 {/** FIRST HOUSE (A1) **/}
                 {houseA1 && (!houseA1.available
                     ?
-                    <g className="image-map1 sold" fill="#484848" opacity="0.8">
-                        <polygon className="cls-1" points="139,203 210,207 228,135 293,93 298,43 240,30 110,85" />
-                        <text x="200" y="120" fill="white" fontSize="24px" fontWeight="bold" textAnchor="middle">Prodáno</text>
+                    <g className="image-map1 sold" fill="#484848" opacity="0">
+                        <polygon className="cls-1" points="98,263 178,287 283,213 278,143 203,118 88,178" />
+                        <text x="185" y="200" fill="white" fontSize="20px" verticalAnchor="start">Prodáno</text>
                     </g>
                     :
-                    <a data-tip data-for="1" onClick={handleResponsivity ? () => history.push('/detail-domu/1') : undefined} style={{ cursor: 'pointer' }}>
+                    <a data-tip data-for="1" onClick={handleResponsivity ? () => history.push('/detail-domu/1') : undefined}>
                         <g className="image-map1" fill="#F5CE42" opacity={firstOpacity * 0.7} onMouseEnter={() => setFirstOpacity('1')} onMouseLeave={() => setFirstOpacity('0')}>
                             <polygon className="cls-1" points="139,203 210,207 228,135 293,93 298,43 240,30 110,85" />
                         </g>
@@ -68,12 +74,12 @@ const ImageMap = ({ houses }) => {
                 {/** SECOND HOUSE (A2) **/}
                 {houseA2 && (!houseA2.available
                     ?
-                    <g className="image-map2 sold" fill="#484848" opacity="0.8">
-                        <polygon className="cls-1" points="256,210 336,232 443,160 438,93 363,65 240,127" />
-                        <text x="340" y="150" fill="white" fontSize="24px" fontWeight="bold" textAnchor="middle">Prodáno</text>
+                    <g className="image-map2 sold" fill="#484848" opacity="0">
+                        <polygon className="cls-1" points="366,476 447,474 485,468 483,406 468,387 453,365 373,374" />
+                        <text x="420" y="420" fill="white" fontSize="20px" verticalAnchor="start">Prodáno</text>
                     </g>
                     :
-                    <a data-tip data-for="2" onClick={handleResponsivity ? () => history.push('/detail-domu/2') : undefined} style={{ cursor: 'pointer' }}>
+                    <a data-tip data-for="2" onClick={handleResponsivity ? () => history.push('/detail-domu/2') : undefined}>
                         <g className="image-map2" fill="#F5CE42" opacity={secondOpacity * 0.7} onMouseEnter={() => setSecondOpacity('1')} onMouseLeave={() => setSecondOpacity('0')}>
                             <polygon className="cls-1" points="256,210 336,232 443,160 438,93 363,65 240,127" />
                         </g>
@@ -83,12 +89,12 @@ const ImageMap = ({ houses }) => {
                 {/** THIRD HOUSE (A3) **/}
                 {houseA3 && (!houseA3.available
                     ?
-                    <g className="image-map3 sold" fill="#484848" opacity="0.8">
-                        <polygon className="cls-1" points="410,272 400,195 510,125 590,150 590,227 510,305" />
-                        <text x="500" y="210" fill="white" fontSize="24px" fontWeight="bold" textAnchor="middle">Prodáno</text>
+                    <g className="image-map3 sold" fill="#484848" opacity="0">
+                        <polygon className="cls-1" points="526,462 598,460 635,454 635,397 616,379 595,357 521,367" />
+                        <text x="575" y="410" fill="white" fontSize="20px" verticalAnchor="start">Prodáno</text>
                     </g>
                     :
-                    <a data-tip data-for="3" onClick={handleResponsivity ? () => history.push('/detail-domu/3') : undefined} style={{ cursor: 'pointer' }}>
+                    <a data-tip data-for="3" onClick={handleResponsivity ? () => history.push('/detail-domu/3') : undefined}>
                         <g className="image-map3" fill="#F5CE42" opacity={thirdOpacity * 0.7} onMouseEnter={() => setThirdOpacity('1')} onMouseLeave={() => setThirdOpacity('0')}>
                             <polygon className="cls-1" points="410,272 400,195 510,125 590,150 590,227 510,305" />
                         </g>
@@ -98,12 +104,12 @@ const ImageMap = ({ houses }) => {
                 {/** FOURTH HOUSE (A4) **/}
                 {houseA4 && (!houseA4.available
                     ?
-                    <g className="image-map4 sold" fill="#484848" opacity="0.8">
+                    <g className="image-map4 sold" fill="#484848" opacity="0">
                         <polygon className="cls-1" points="569,349 672,370 775,275 775,205 669,175 569,255" />
-                        <text x="670" y="270" fill="white" fontSize="24px" fontWeight="bold" textAnchor="middle">Prodáno</text>
+                        <text x="710" y="395" fill="white" fontSize="20px" verticalAnchor="start">Prodáno</text>
                     </g>
                     :
-                    <a data-tip data-for="4" onClick={handleResponsivity ? () => history.push('/detail-domu/4') : undefined} style={{ cursor: 'pointer' }}>
+                    <a data-tip data-for="4" onClick={handleResponsivity ? () => history.push('/detail-domu/4') : undefined}>
                         <g className="image-map4" fill="#F5CE42" opacity={fourthOpacity * 0.7} onMouseEnter={() => setFourthOpacity('1')} onMouseLeave={() => setFourthOpacity('0')}>
                             <polygon className="cls-1" points="569,349 672,370 775,275 775,205 669,175 569,255" />
                         </g>
@@ -113,12 +119,12 @@ const ImageMap = ({ houses }) => {
                 {/** FIFTH HOUSE (A5) **/}
                 {houseA5 && (!houseA5.available
                     ?
-                    <g className="image-map5 sold" fill="#484848" opacity="0.8">
+                    <g className="image-map5 sold" fill="#484848" opacity="0">
                         <polygon className="cls-1" points="776,420 896,460 980,280 865,250 770,340" />
-                        <text x="870" y="350" fill="white" fontSize="24px" fontWeight="bold" textAnchor="middle">Prodáno</text>
+                        <text x="640" y="260" fill="white" fontSize="20px" verticalAnchor="start">Prodáno</text>
                     </g>
                     :
-                    <a data-tip data-for="5" onClick={handleResponsivity ? () => history.push('/detail-domu/5') : undefined} style={{ cursor: 'pointer' }}>
+                    <a data-tip data-for="5" onClick={handleResponsivity ? () => history.push('/detail-domu/5') : undefined}>
                         <g className="image-map5" fill="#F5CE42" opacity={fifthOpacity * 0.7} onMouseEnter={() => setFifthOpacity('1')} onMouseLeave={() => setFifthOpacity('0')}>
                             <polygon className="cls-1" points="776,420 896,460 980,280 865,250 770,340" />
                         </g>
@@ -126,7 +132,7 @@ const ImageMap = ({ houses }) => {
                 )}
             </svg>
 
-            {/** Tooltips for available houses **/}
+            {/** FIRST HOUSE (A1) **/}
             {houseA1 && houseA1.available && (houseA1.price || houses) &&
                 <Tooltip
                     houseNum={houseA1.name.toString()}
@@ -140,6 +146,7 @@ const ImageMap = ({ houses }) => {
                 />
             }
 
+            {/** SECOND HOUSE (A2) **/}
             {houseA2 && houseA2.available && (houseA2.price || houses) &&
                 <Tooltip
                     houseNum={houseA2.name.toString()}
@@ -153,6 +160,7 @@ const ImageMap = ({ houses }) => {
                 />
             }
 
+            {/** THIRD HOUSE (A3) **/}
             {houseA3 && houseA3.available && (houseA3.price || houses) &&
                 <Tooltip
                     houseNum={houseA3.name.toString()}
@@ -166,6 +174,7 @@ const ImageMap = ({ houses }) => {
                 />
             }
 
+            {/** FOURTH HOUSE (A4) **/}
             {houseA4 && houseA4.available && (houseA4.price || houses) &&
                 <Tooltip
                     houseNum={houseA4.name.toString()}
@@ -179,6 +188,7 @@ const ImageMap = ({ houses }) => {
                 />
             }
 
+            {/** FIFTH HOUSE (A5) **/}
             {houseA5 && houseA5.available && (houseA5.price || houses) &&
                 <Tooltip
                     houseNum={houseA5.name.toString()}

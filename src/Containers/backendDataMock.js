@@ -75,11 +75,11 @@ export const MOCK_PAGES = [
 ];
 
 export const MOCK_HOUSES = [
-    { id: 1, name: 'A1', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '503 m²', price: '12 000 000 Kč' },
-    { id: 2, name: 'A2', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '521 m²', price: '12 100 000 Kč' },
-    { id: 3, name: 'A3', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '524 m²', price: '12 200 000 Kč' },
-    { id: 4, name: 'A4', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '465 m²', price: '12 300 000 Kč' },
-    { id: 5, name: 'A5', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '474 m²', price: '12 400 000 Kč' },
+    { id: 1, name: 'A1', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '503 m²', price: '20 000 000 Kč' },
+    { id: 2, name: 'A2', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '521 m²', price: '20 000 000 Kč' },
+    { id: 3, name: 'A3', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '524 m²', price: '20 000 000 Kč' },
+    { id: 4, name: 'A4', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '465 m²', price: '20 000 000 Kč' },
+    { id: 5, name: 'A5', available: true, disposition: '5+kk', floor_area: '200 m²', lot_area: '474 m²', price: '20 000 000 Kč' },
 ];
 
 export const MOCK_NEWS = [
