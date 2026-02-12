@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import LocalityPage from '../Components/pages/LocalityPage/LocalityPage';
+import BackendDataContext from '../Context/BackendDataContext';
 
 /*SASS*/
 import './scenes.scss';
 
 const Locality = () => {
+    const { currentState } = useContext(BackendDataContext);
+    const page = currentState.pages.find((page) => page.id === 3) || { sections: [{ content: '' }] };
+
     return(
         <div className="page-container">
             <div className="heading-wrapper">
@@ -14,7 +18,7 @@ const Locality = () => {
                 <div className="border-helper"></div>
             </div>
             <div className="page-content">
-                <LocalityPage />
+                <LocalityPage page={page} />
             </div>
         </div>
     );

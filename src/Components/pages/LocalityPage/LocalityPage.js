@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 /*OWN*/
 /*import MapContainer from './MapComponent';*/
@@ -7,28 +7,27 @@ import { useWindowSize } from '../../../Utils/useWindowSize';
 import car from '../../../assets/img/icons/car.svg';
 import trees from '../../../assets/img/icons/trees.svg';
 import house from '../../../assets/img/icons/house.png';
-import BackendDataContext from '../../../Context/BackendDataContext';
 
 /*SASS*/
 import './LocalityPage.scss';
 import TextEditorText from '../../TextEditorText/TextEditorText';
 
 
-const LocalityPage = () => {
-
-    const { currentState } = useContext(BackendDataContext);
-    const page = currentState.pages.find((page) => page.id === 3);
+const LocalityPage = ({ page }) => {
 
     const windowSize = useWindowSize();
 
-    const zelesiceLocalityContent = {
-        blocks: [
-            { key: "l1", text: "Želešice jsou obcí rozkládající se v blízkosti města Modřice v okrese Brno-venkov. Jedná se o obec, která svým občanům poskytuje klidné bydlení obklopené malebnou přírodou, kde můžete trávit volný čas s rodinou. V obci žije přibližně 1600 obyvatel. ", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l2", text: "Jednou z největších výhod obce je její dostupnost do Brna. Jen 8 minut od obce se nachází obchodní a zábavní centrum OC Olympia. V samotném centru Brna jste autem za 15 minut. Pro děti je obec vybavena dvěma mateřskými a dvěma základními školami, dále se zde nachází obecní úřad, pošta, fotbalové hřiště, dětské hřiště, restaurace, cukrárna, kostel. ", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l3", text: "O zábavu a sportovní vyžití je v Želešicích postaráno. Nachází se zde Kynologický klub, Myslivecký spolek a v neposlední řadě Vinařský spolek. Milovníky kol a pěších túr potěší cyklotrasy, které se v okolí nachází. Zavítat můžete například do přírodního parku Bobrava, vydat se po Brněnské vinařské stezce nebo provětrat kolo na cyklostezce s názvem Želešické KOLORÁDO.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} }
-        ],
-        entityMap: {}
-    };
+    // Fetch content from API, with hardcoded fallback
+    const zelesiceLocalityContent = page && page.sections && page.sections[0] && page.sections[0].content
+        ? JSON.parse(page.sections[0].content)
+        : {
+            blocks: [
+                { key: "l1", text: "Želešice jsou obcí rozkládající se v blízkosti města Modřice v okrese Brno-venkov. Jedná se o obec, která svým občanům poskytuje klidné bydlení obklopené malebnou přírodou, kde můžete trávit volný čas s rodinou. V obci žije přibližně 1600 obyvatel. ", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "l2", text: "Jednou z největších výhod obce je její dostupnost do Brna. Jen 8 minut od obce se nachází obchodní a zábavní centrum OC Olympia. V samotném centru Brna jste autem za 15 minut. Pro děti je obec vybavena dvěma mateřskými a dvěma základními školami, dále se zde nachází obecní úřad, pošta, fotbalové hřiště, dětské hřiště, restaurace, cukrárna, kostel. ", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "l3", text: "O zábavu a sportovní vyžití je v Želešicích postaráno. Nachází se zde Kynologický klub, Myslivecký spolek a v neposlední řadě Vinařský spolek. Milovníky kol a pěších túr potěší cyklotrasy, které se v okolí nachází. Zavítat můžete například do přírodního parku Bobrava, vydat se po Brněnské vinařské stezce nebo provětrat kolo na cyklostezce s názvem Želešické KOLORÁDO.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} }
+            ],
+            entityMap: {}
+        };
 
     return (
         <>

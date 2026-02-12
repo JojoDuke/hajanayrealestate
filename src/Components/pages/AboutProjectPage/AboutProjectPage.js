@@ -22,25 +22,28 @@ const AboutProjectPage = ({ page }) => {
     const aboutPage = pages.find(page => page.id === 2);
     const images = aboutPage && aboutPage.sections && aboutPage.sections[0] ? aboutPage.sections[0].images : [];
 
-    const hajanyContent = {
-        blocks: [
-            { key: "p1", text: "Patrové domy 5+kk s dvojgaráží, velkou terasou a chytrými technologiemi.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "p2", text: "Každý dům má obytnou plochu 200 m², pozemky 465-524 m² a je vybaven nejmodernějšími technologiemi pro komfortní a úsporné bydlení.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "p3", text: "Celý projekt je koncipován jako moderní a úsporné bydlení, které kombinuje špičkové technologie s komfortem a soukromím.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "s1", text: "", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "h1", text: "Technologie a vybavení", type: "unstyled", depth: 0, inlineStyleRanges: [{ offset: 0, length: 22, style: "BOLD" }], entityRanges: [], data: {} },
-            { key: "l1", text: "•    Chytrá domácnost Loxone – automatizace vytápění, osvětlení, zabezpečení a dalších funkcí", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l2", text: "•    Fotovoltaická elektrárna s bateriovým úložištěm – ekologický a úsporný provoz", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l3", text: "•    Úsporné elektrické podlahové vytápění – inteligentní regulace s propojením na FVE", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l4", text: "•    Hliníková okna s trojsklem a elektrickými žaluziemi", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l5", text: "•    Luxusní oplocení Luxline – z přední a boční strany (zadní část lze řešit individuálně: Luxline plot s brankou nebo pletivo)", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l6", text: "•    Umělý val za domy osázený zelení – zajišťuje soukromí, eliminuje hluk z komunikace Hajany–Ořechov a vytváří výhled do zeleně", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "l7", text: "•    Možnost vstupu brankou ze zahrady přímo do přírody", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "s2", text: "", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
-            { key: "p4", text: "Realizaci zajišťuje Real Major s.r.o., naše firma se sídlem přímo v Hajanech, s dlouholetými zkušenostmi v oblasti výstavby moderních rodinných domů.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} }
-        ],
-        entityMap: {}
-    };
+    // Fetch content from API, with hardcoded fallback
+    const hajanyContent = aboutPage && aboutPage.sections && aboutPage.sections[0] && aboutPage.sections[0].content
+        ? JSON.parse(aboutPage.sections[0].content)
+        : {
+            blocks: [
+                { key: "p1", text: "Patrové domy 5+kk s dvojgaráží, velkou terasou a chytrými technologiemi.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "p2", text: "Každý dům má obytnou plochu 200 m², pozemky 465-524 m² a je vybaven nejmodernějšími technologiemi pro komfortní a úsporné bydlení.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "p3", text: "Celý projekt je koncipován jako moderní a úsporné bydlení, které kombinuje špičkové technologie s komfortem a soukromím.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "s1", text: "", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "h1", text: "Technologie a vybavení", type: "unstyled", depth: 0, inlineStyleRanges: [{ offset: 0, length: 22, style: "BOLD" }], entityRanges: [], data: {} },
+                { key: "l1", text: "•    Chytrá domácnost Loxone – automatizace vytápění, osvětlení, zabezpečení a dalších funkcí", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "l2", text: "•    Fotovoltaická elektrárna s bateriovým úložištěm – ekologický a úsporný provoz", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "l3", text: "•    Úsporné elektrické podlahové vytápění – inteligentní regulace s propojením na FVE", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "l4", text: "•    Hliníková okna s trojsklem a elektrickými žaluziemi", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "l5", text: "•    Luxusní oplocení Luxline – z přední a boční strany (zadní část lze řešit individuálně: Luxline plot s brankou nebo pletivo)", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "l6", text: "•    Umělý val za domy osázený zelení – zajišťuje soukromí, eliminuje hluk z komunikace Hajany–Ořechov a vytváří výhled do zeleně", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "l7", text: "•    Možnost vstupu brankou ze zahrady přímo do přírody", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "s2", text: "", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} },
+                { key: "p4", text: "Realizaci zajišťuje Real Major s.r.o., naše firma se sídlem přímo v Hajanech, s dlouholetými zkušenostmi v oblasti výstavby moderních rodinných domů.", type: "unstyled", depth: 0, inlineStyleRanges: [], entityRanges: [], data: {} }
+            ],
+            entityMap: {}
+        };
 
     const carImages = images.slice(0, 3).map(image => {
         if (image.startsWith('http')) return image;
