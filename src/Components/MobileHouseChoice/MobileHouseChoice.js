@@ -49,6 +49,9 @@ const MobileHouseChoice = ({ houses }) => {
     // Use API data if available, otherwise fall back to mockData
     let data = houses && houses.length > 0 ? houses : mockData;
 
+    // Filter to only show houses A1-A5
+    data = data.filter(house => ['A1', 'A2', 'A3', 'A4', 'A5'].includes(house.name));
+
     // Format the availability text for display
     data = data.map((house) => {
         let newHouse = { ...house };
