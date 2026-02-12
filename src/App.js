@@ -39,10 +39,6 @@ const App = () => {
       .then(res => {
         let formatedHouses = res.data.houses.map((house) => {
           let formatedHouse = { ...house };
-          // Override price for houses A1-A5
-          if (['A1', 'A2', 'A3', 'A4', 'A5'].includes(house.name)) {
-            house.price = 20000000;
-          }
           formatedHouse.price = formatNumber(house.price, 0, ",", '\xa0')
           formatedHouse.lot_area = house.lot_area + " m²";
           formatedHouse.floor_area = house.floor_area + " m²";

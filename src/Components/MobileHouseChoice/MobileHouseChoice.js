@@ -37,7 +37,7 @@ const MobileHouseChoice = ({ houses }) => {
         []
     )
 
-    // MOCK DATA TO MATCH THE IMAGE PROVIDED BY USER
+    // MOCK DATA - Only used as fallback if API data is not available
     const mockData = [
         { id: 1, name: "A1", available: true, disposition: "5+kk", floor_area: "200 m²", lot_area: "503 m²", price: "20 000 000 Kč" },
         { id: 2, name: "A2", available: true, disposition: "5+kk", floor_area: "200 m²", lot_area: "521 m²", price: "20 000 000 Kč" },
@@ -46,19 +46,15 @@ const MobileHouseChoice = ({ houses }) => {
         { id: 5, name: "A5", available: true, disposition: "5+kk", floor_area: "200 m²", lot_area: "474 m²", price: "20 000 000 Kč" },
     ];
 
+    // Use API data if available, otherwise fall back to mockData
     let data = houses && houses.length > 0 ? houses : mockData;
 
-    // Ensure all data follows the image's "K dispozici" text and formatting
+    // Format the availability text for display
     data = data.map((house) => {
         let newHouse = { ...house };
-        // If it's real data, we still format it like the mock for consistency if that's what's requested
         newHouse.available = house.available ? "K dispozici" : "Prodáno";
         return newHouse;
     });
-
-    // If we want to strictly match the image (only A1-A5), we can truncate or use only mockData.
-    // Given the user said "make it look like this", I will use the mock data as the primary source for now.
-    data = mockData.map(h => ({ ...h, available: h.available ? "K dispozici" : "Prodáno" }));
 
     return (
         <>
