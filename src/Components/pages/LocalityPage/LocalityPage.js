@@ -44,7 +44,7 @@ const LocalityPage = ({ page }) => {
                     }
                 </div>
                 <div className="locality-features-wrapper">
-                    <h2>Čím si vás Želešice získají</h2>
+                    <h2>Čím si vás Hajany získají</h2>
                     <div className="locality-features-content">
                         <div className="locality-features-individual car-features">
                             <div className="feature-img-container">
